@@ -1,0 +1,801 @@
+Formula,Translation,Translation_Type,Class,Difference,char_length
+"( ~ Large ( e ) $ FrontOf ( e , d ) ) & ( ~ Tet ( e ) $ FrontOf ( e , d ) )","e is in front of d unless it (i.e., e) is a large tetrahedron",Reference,2,True,61
+"@ u ( Tet ( u ) $ ~ / y ( Cube ( y ) & SameSize ( u , y ) ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+/ z ( ~ Large ( z ) & Dodec ( z ) ),there is an element z such that it is not the case that z is large and z is a dodecahedron,Baseline,1,False,90
+@ w ( Even ( w ) $ Prime ( w ) ),every even number is prime,Reference,3,False,26
+"@ x @ z ( ( Cube ( x ) & FrontOf ( z , x ) ) $ Small ( x ) )","for all z , for all cubes x , z is not in front of x or x is small",LoLa,2,False,66
+"/ x ( Small ( x ) & Cube ( x ) & ( / y BackOf ( y , x ) | ~ / y BackOf ( y , x ) ) )",there is an element x such that x is small and x is a cube and there is an element y such that y is in back of x or it is not the case that there is an element y such that y is in back of x,Baseline,3,True,189
+"SameCol ( b , e ) & SameCol ( d , a ) & SameRow ( d , e )","b is in the same column as e , d is in the same column as a and d is in the same row as e",Ranta,0,True,89
+"/ v ( Large ( v ) & Cube ( v ) & LeftOf ( v , b ) & BackOf ( v , c ) )",some large cube is to the left of b and in back of c,Reference,0,True,52
+@ x ( Prime ( x ) $ ~ Even ( x ) ),"for all x , if x is a prime , then it is not the case that x is even",Baseline,1,False,68
+"@ x ( Cube ( x ) $ @ y ~ ( Cube ( y ) & RightOf ( x , y ) ) )","for all cubes x , for all cubes y , x is not to the right of y",LoLa,2,False,62
+"BackOf ( d , b ) & Smaller ( b , d ) & BackOf ( e , b ) & Smaller ( b , e )",d is in back of b and b is smaller than d and e is in back of b and b is smaller than e,Baseline,2,True,87
+"@ x @ y ( ( Cube ( x ) & Dodec ( y ) ) $ ( SameSize ( x , y ) | Smaller ( x , y ) ) )","for all x , for all y , if x is a cube and y is a dodecahedron , then x is of the same size as y or x is smaller than y",Baseline,1,False,119
+"@ x @ y ( ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) & ( LeftOf ( x , b ) $ LeftOf ( x , a ) ) )","for all x , for all y , if x is to the left of a , then x is to the left of b and if x is to the left of b , then x is to the left of a",Baseline,1,False,135
+"~ ( FrontOf ( d , c ) | FrontOf ( c , b ) ) & ~ FrontOf ( d , b )",neither d nor c is in front of either c or b,Reference,3,False,44
+"@ x ( ( Dodec ( x ) & / y ( Cube ( y ) & SameSize ( x , y ) ) ) | ~ Dodec ( x ) )","for all x , x is a dodecahedron and there is an element y such that y is a cube and x is of the same size as y or it is not the case that x is a dodecahedron",Baseline,1,False,157
+"@ x ( @ y ( Dodec ( x ) & ~ RightOf ( x , y ) ) $ / z ( Dodec ( x ) & LeftOf ( x , z ) ) )","for all x , if for all y , x is a dodecahedron and it is not the case that x is to the right of y , then there is an element z such that x is a dodecahedron and x is to the left of z",Baseline,1,False,182
+"/ y ( Cube ( y ) & @ z ( Tet ( z ) $ FrontOf ( y , z ) ) )","there is an element y such that y is a cube and for all z , if z is a tetrahedron , then y is in front of z",Baseline,2,True,107
+"~ / x / y ( Cube ( y ) & BackOf ( x , y ) & / z ( Cube ( z ) & FrontOf ( x , z ) ) & Large ( x ) )","it is not the case that there is an element x such that there is an element y such that y is a cube , x is in back of y , x is in front of some cube and x is large",Ranta,3,True,163
+"~ / x ( ~ / y FrontOf ( y , x ) & ~ Tet ( x ) )",it is not the case that there is an element x such that it is not the case that there is an element y such that y is in front of x and x is not a tetrahedron,Ranta,2,False,157
+"/ x ( Cube ( x ) & Large ( x ) & / y ( Cube ( y ) & Small ( y ) & BackOf ( y , x ) ) )",a large cube is in front of a small cube,Reference,0,True,40
+( Small ( d ) $ Large ( a ) ) & ( ~ Small ( d ) $ ~ Large ( a ) ),"if d is small , then a is large and if it is not the case that d is small , then it is not the case that a is large",Baseline,1,False,115
+"Cube ( d ) & SameShape ( c , d ) & ~ Small ( d ) & ~ Small ( c )",d is a cube and c is of the same shape as d and it is not the case that d is small and it is not the case that c is small,Baseline,1,False,121
+"~ / x ( LeftOf ( x , a ) & ~ / y ( ~ Larger ( x , y ) & LeftOf ( y , b ) ) )",it is not the case that there is an element x such that x is to the left of a and it is not the case that there is an element y such that it is not the case that x is larger than y and y is to the left of b,Baseline,1,False,206
+"@ x / y ( ( Cube ( x ) & / y BackOf ( y , x ) ) $ Small ( x ) )","for all cubes x , nothing is in back of x or x is small",LoLa,2,False,55
+"BackOf ( d , b ) & BackOf ( e , b )",d is in back of b and e is in back of b,Baseline,0,True,39
+"@ x @ y ( ( SameSize ( x , y ) & Tet ( x ) ) $ ~ Cube ( y ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+"~ ( FrontOf ( d , b ) | FrontOf ( d , c ) ) & ~ FrontOf ( c , b )",neither d nor c is in front of either c or b,Reference,3,False,44
+~ / w ( Dodec ( w ) & Large ( w ) ),it is not the case that some dodecahedron is large,Ranta,3,True,50
+"@ z ( LeftOf ( z , a ) $ ~ @ y ( LeftOf ( y , b ) $ Larger ( z , y ) ) )","for all z , if z is to the left of a , then it is not the case that for all y , if y is to the left of b , then z is larger than y",Baseline,1,False,130
+"@ x @ y ( ( Cube ( x ) & RightOf ( y , x ) ) $ ~ Cube ( y ) )","for all y , if y is to the right of some cube , then y is not a cube",LoLa,2,False,68
+@ y ( Large ( y ) $ ~ Cube ( y ) ),"for all y , if y is large , then y is not a cube",Ranta,0,True,48
+"@ x @ y ( ( Smaller ( x , y ) & LeftOf ( y , b ) ) $ ~ LeftOf ( x , a ) )","for all x , for all y , if x is smaller than y and y is to the left of b , then x is not to the left of a",Ranta,2,False,105
+"@ x / y ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ Small ( x ) )","for all x , if for all y , x is a dodecahedron and y is not to the right of x , then x is small",LoLa,0,True,95
+"@ x ( Dodec ( x ) $ / z ( Cube ( z ) & SameSize ( z , x ) ) )",some cube is of the same size as every dodecahedron,Ranta,3,True,51
+"@ y ~ @ x Larger ( y , x )",nothing is larger than everything,Reference,0,True,33
+"@ x ( Cube ( x ) $ ( FrontOf ( x , b ) | BackOf ( x , a ) ) )","for all x , if x is a cube , then x is in front of b or x is in back of a",Baseline,2,True,73
+~ ~ Tet ( c ) | Cube ( b ),it is not the case that c is not a tetrahedron or b is a cube,Ranta,1,True,61
+"~ ( FrontOf ( d , b ) | FrontOf ( c , b ) ) & ~ FrontOf ( d , c )",neither d nor c is in front of either c or b,Reference,3,False,44
+@ x ( ( Medium ( x ) $ ~ Cube ( x ) ) & ( Cube ( x ) $ ~ Medium ( x ) ) ),there are no medium-sized cubes,Reference,3,False,31
+"Tet ( a ) & ( SameShape ( e , a ) | SameShape ( a , f ) )",either both a and e are tetrahedra or both a and f are,Reference,3,False,54
+"~ / x / y ( BackOf ( y , x ) & Dodec ( x ) )",no dodecahedron has anything in back of it,Reference,0,True,42
+"@ x ( Dodec ( x ) $ / y ( ( ~ RightOf ( y , x ) & ~ RightOf ( x , x ) ) $ LeftOf ( y , x ) ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"~ / x ( Cube ( x ) & ~ ( ~ SameCol ( a , x ) & ~ SameCol ( x , b ) ) )","for all cubes x , a is not in the same column as x and x is not in the same column as b",LoLa,2,False,87
+Cube ( d ) & Cube ( c ) & ~ ( Small ( d ) & Small ( c ) ) & ~ ( Small ( d ) | Small ( c ) ),"d is a cube , c is a cube , it is not the case that d and c are small and it is not the case that d or c is small",Ranta,0,True,113
+~ ( Tet ( a ) & Tet ( c ) ) | Large ( a ) | Large ( c ),it is not the case that a is a tetrahedron and c is a tetrahedron or a is large or c is large,Baseline,1,False,93
+"@ x ( ( Cube ( x ) & Small ( x ) ) $ LeftOf ( a , x ) )","for all x , if x is a cube and x is small , then a is to the left of x",Baseline,0,True,70
+"@ x ( / y / z ( BackOf ( x , y ) & FrontOf ( x , z ) & Cube ( y ) & Cube ( z ) ) $ ~ Large ( x ) )","for all x , if there is an element y such that there is an element z such that x is in back of y , x is in front of z , y is a cube and z is a cube , then x is not large",Ranta,1,True,169
+"@ x ( ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) & ( LeftOf ( x , b ) $ LeftOf ( x , a ) ) )","for all x , if x is to the left of a , then x is to the left of b and for all x , if x is to the left of b , then x is to the left of a",LoLa,0,True,135
+@ x ( Dodec ( x ) $ / y ( Small ( y ) | Medium ( y ) | Large ( y ) ) ),"every dodecahedron is small, medium, or large",Reference,3,False,45
+@ x ( ~ Cube ( x ) | ~ Large ( x ) ),"for all cubes x , x is not large",LoLa,2,False,32
+"@ x @ y ( Cube ( y ) $ ~ LeftOf ( x , y ) )",nothing is to the left of some cube,LoLa,0,True,35
+( Tet ( a ) & Tet ( c ) & ( Large ( a ) | Large ( c ) ) ) | ~ ( Tet ( a ) & Tet ( c ) ),a is a tetrahedron and c is a tetrahedron and a is large or c is large or it is not the case that a is a tetrahedron and c is a tetrahedron,Baseline,1,False,139
+"@ z ( Dodec ( z ) $ / y ( Tet ( y ) & Larger ( y , z ) ) )",every dodecahedron is smaller than some tetrahedron,Reference,3,False,51
+Cube ( c ) & ~ Small ( c ) & Cube ( d ) & ~ Small ( d ),"c is a cube , c is not small , d is a cube and d is not small",Ranta,0,True,61
+/ u ( Dodec ( u ) & Large ( u ) ),there is an element u such that u is a dodecahedron and u is large,Baseline,0,True,66
+( ( Cube ( a ) $ Cube ( e ) ) $ Cube ( c ) ) | ( ( Cube ( c ) $ Cube ( a ) ) $ Cube ( e ) ),"if if a is a cube , then e is a cube , then c is a cube , it is not the case that if c is a cube , then a is a cube or e is a cube",LoLa,1,True,130
+"LeftOf ( b , e )",b is to the left of e,Baseline,0,True,21
+"~ ( ( RightOf ( e , c ) & RightOf ( b , e ) ) | ( LeftOf ( c , a ) & LeftOf ( a , b ) ) )",all these hold : \item c is not to the left of a or a is not to the left of b \item e is not to the right of c or b is not to the right of e,LoLa,0,True,140
+"/ x / y ( Cube ( x ) & Large ( x ) & FrontOf ( x , y ) & Cube ( y ) & Small ( y ) )",there is an element x such that there is an element y such that x is a cube and x is large and x is in front of y and y is a cube and y is small,Baseline,1,False,144
+"@ x ( ( Dodec ( x ) & @ w ~ RightOf ( w , x ) ) $ / z LeftOf ( z , x ) )","for all x , if x is a dodecahedron and for all w , it is not the case that w is to the right of x , then there is an element z such that z is to the left of x",Baseline,1,False,158
+"/ x / y ( Cube ( x ) & Tet ( y ) & ~ Larger ( y , x ) )",there is an element x such that there is a tetrahedron y such that y is not larger than x and x is a cube,LoLa,2,False,105
+"@ y @ x ( Cube ( y ) $ ( Tet ( x ) $ LeftOf ( y , x ) ) )",every cube is to the left of every tetrahedron,Reference,3,False,46
+"~ ( LeftOf ( a , d ) | RightOf ( a , d ) ) | Cube ( a )","if a is to the left of d or to the right of d , then a is a cube",LoLa,0,True,64
+"~ / x ( LeftOf ( x , a ) & @ y ( ~ LeftOf ( y , b ) | Larger ( x , y ) ) )",nothing to the left of a is larger than everything to the left of b,Reference,0,True,67
+"@ x ( / z ( Cube ( z ) & Larger ( a , z ) & Tet ( x ) ) $ Smaller ( a , x ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"~ ( Larger ( a , c ) $ Large ( a ) ) & ~ ( Larger ( e , c ) $ Large ( e ) )","a is larger than c , a is not large , e is larger than c and e is not large",LoLa,2,False,75
+"@ x ~ @ z @ y ( Larger ( x , z ) & Larger ( x , y ) )","for all x , it is not the case that for all z , for all y , x is larger than z and larger than y",Ranta,1,True,96
+"@ x ( Dodec ( x ) $ ( / y RightOf ( x , y ) | / z LeftOf ( x , z ) ) )","for all dodecahedrons x , there is an element y such that x is to the right of y or there is an element z such that x is to the left of z",Ranta,2,False,137
+"@ v ( Cube ( v ) $ ( ~ SameCol ( v , a ) & ~ SameCol ( v , b ) ) )","if something is a cube, then it is not in the same column as either a or b",Reference,0,True,74
+"@ y ~ / x ( Dodec ( x ) & FrontOf ( x , y ) )",no dodecahedron has anything in back of it,Reference,0,True,42
+"@ y ( / x ( BackOf ( x , y ) & Cube ( y ) ) $ Small ( y ) )",every cube with something in back of it is small,Reference,3,False,48
+"@ y @ v ( ( Cube ( y ) & Tet ( v ) ) $ LeftOf ( y , v ) )","for all y , for all v , if y is a cube and v is a tetrahedron , then y is to the left of v",Baseline,1,False,90
+"@ x ( ~ / y FrontOf ( y , x ) $ Large ( x ) ) & @ z ( ~ Large ( z ) $ / w FrontOf ( w , z ) )","for all x , if it is not the case that there is an element y such that y is in front of x , then x is large and for all z , if z is not large , then there is an element w such that w is in front of z",Ranta,2,False,199
+"SameCol ( b , e ) & SameRow ( d , e ) & SameCol ( a , d )","b is in the same column as e , d is in the same row as e and a is in the same column as d",Ranta,0,True,89
+/ u Large ( u ),something is large,Reference,0,True,18
+( Tet ( a ) & Tet ( e ) ) | ( Tet ( a ) & Tet ( f ) ),all these hold : \item a is a tetrahedron \item e is a tetrahedron or f is a tetrahedron,LoLa,1,True,88
+"/ y ( Cube ( y ) & Large ( y ) & / z ( Cube ( z ) & Small ( z ) & FrontOf ( y , z ) ) )",there is an element y such that y is a cube and y is large and there is an element z such that z is a cube and z is small and y is in front of z,Baseline,1,False,144
+Medium ( c ) $ ~ ( Cube ( d ) | Cube ( e ) | Cube ( f ) ),"if c is medium , then it is not the case that d is a cube , e is a cube or f is a cube",Ranta,1,True,86
+( Tet ( a ) | ( ~ Tet ( a ) & Tet ( c ) ) ) $ ( Cube ( b ) | Cube ( d ) ),"if a is a tetrahedron or it is not the case that a is a tetrahedron and c is a tetrahedron , then b is a cube or d is a cube",Baseline,1,False,124
+"@ y ( Dodec ( y ) $ @ x ( ( Cube ( x ) & BackOf ( x , y ) ) $ Smaller ( x , y ) ) )","for all dodecahedrons y , for all x , if x is a cube and x is in back of y , then x is smaller than y",Ranta,2,False,101
+@ x ( Even ( x ) $ ~ Prime ( x ) ),no even number is prime,Reference,3,False,23
+"@ x ( Cube ( x ) $ @ y ( Cube ( y ) $ ( ~ RightOf ( x , y ) & ~ LeftOf ( x , y ) ) ) )",none of the cubes is to the right of any of the other cubes,Reference,3,False,59
+"( Cube ( a ) & Cube ( d ) ) $ ( LeftOf ( a , d ) | LeftOf ( d , a ) | LeftOf ( d , a ) )","a is not a cube , d is not a cube , d is to the left of a or a is to the left of d",LoLa,0,True,82
+~ @ y ~ ( Dodec ( y ) & ~ Small ( y ) ),"it is not the case that for all y , it is not the case that y is a dodecahedron and it is not the case that y is small",Baseline,1,False,118
+"~ ( BackOf ( c , d ) | BackOf ( b , d ) ) & ~ ( BackOf ( c , c ) | BackOf ( b , c ) )",it is not the case that c or b is in back of d and it is not the case that c is in back of itself or b is in back of c,Ranta,1,True,118
+"~ ( Larger ( e , c ) | Larger ( d , c ) )",it is not the case that e or d is larger than c,Ranta,2,False,47
+"/ z @ y ( ( BackOf ( y , z ) $ Larger ( y , z ) ) & @ x ( BackOf ( x , y ) $ Larger ( x , y ) ) )","there is an element z such that for all y , all these hold : \item if y is in back of z , then y is larger than z \item for all x , if x is in back of y , then x is larger than y",Ranta,2,False,178
+"/ x / y ( Cube ( x ) & Large ( x ) & LeftOf ( x , b ) & BackOf ( x , c ) )",a large cube to the left of b is in back of c,Reference,0,True,45
+~ / z ( Cube ( z ) & Medium ( z ) ),"for all cubes z , z is not medium",LoLa,2,False,33
+"@ x ( SameCol ( x , a ) | SameCol ( x , b ) | SameCol ( x , c ) )","for all x , x is in the same column as a , in the same column as b or in the same column as c",Ranta,0,True,93
+"@ x / y ( Tet ( x ) $ ( ( Tet ( y ) | Cube ( y ) | Dodec ( y ) ) & BackOf ( x , y ) ) )","for all x , if for all y , if y is a tetrahedron , y is a cube or y is a dodecahedron , then x is not in back of y , then x is not a tetrahedron",LoLa,1,True,144
+"@ x @ z @ y ( ( Cube ( z ) & Cube ( y ) & BackOf ( x , y ) & FrontOf ( x , z ) ) $ ~ Large ( x ) )","for all x , for all z , for all y , if z is a cube and y is a cube and x is in back of y and x is in front of z , then it is not the case that x is large",Baseline,1,False,153
+/ x ( Dodec ( x ) & ~ Small ( x ) & ~ Small ( x ) & ~ Large ( x ) ),there is a dodecahedron x such that x is not small and x is not large,LoLa,2,False,69
+"@ x / y ( ~ FrontOf ( y , x ) $ Large ( x ) ) & / x ( ~ Large ( x ) $ / y FrontOf ( y , x ) )",only large objects have nothing in front of them,Reference,0,True,48
+"@ x @ x @ y ( ( Dodec ( x ) & Cube ( y ) & LeftOf ( x , y ) ) $ Large ( x ) )","for all x , for all x , for all y , if x is a dodecahedron , y is a cube and x is to the left of y , then x is large",Ranta,0,True,116
+"@ x ( ( ~ LeftOf ( x , a ) $ ~ LeftOf ( x , b ) ) & ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) )","for all x , if x is to the left of a , then x is to the left of b and for all x , if x is to the left of b , then x is to the left of a",LoLa,0,True,135
+"/ x ( ( Dodec ( x ) & RightOf ( x , e ) ) $ ~ Dodec ( e ) )","there is an element x such that if x is a dodecahedron and x is to the right of e , then it is not the case that e is a dodecahedron",Baseline,1,False,132
+"@ x ( Dodec ( x ) $ LeftOf ( e , x ) ) $ ~ Dodec ( e )","if e is to the left of every dodecahedron , then e is not a dodecahedron",Ranta,2,False,72
+"@ v ~ Adjoins ( a , v )",a is adjacent to nothing,LoLa,0,True,24
+"@ x ( ( Cube ( x ) & ~ / y ( ~ FrontOf ( x , y ) & Tet ( y ) ) ) $ Large ( x ) )","for all x , if x is in front of every tetrahedron and x is a cube , then x is large",LoLa,3,True,83
+"@ z ( ( Dodec ( z ) & ~ / x RightOf ( x , z ) ) $ / y LeftOf ( y , z ) )","for all z , if z is a dodecahedron and it is not the case that there is an element x such that x is to the right of z , then there is an element y such that y is to the left of z",Baseline,3,True,178
+"/ x ( Small ( x ) & Cube ( x ) & ( / y BackOf ( y , x ) | ~ / y BackOf ( y , x ) ) )","there is an element x such that all these hold : \item x is small , x is a cube \item there is an element y such that y is in back of x or it is not the case that there is an element y such that y is in back of x",Ranta,3,True,212
+"/ x ( ( Small ( x ) & Tet ( x ) ) $ / y ( Small ( y ) & Cube ( y ) & BackOf ( x , y ) ) )","there is an element x such that if x is a tetrahedron and x is small , then there is a cube y such that x is in back of y and y is small",LoLa,2,False,136
+"@ x @ w ( Cube ( x ) $ ( Tet ( w ) $ LeftOf ( x , w ) ) )","for all x , for all w , if x is a cube , then if w is a tetrahedron , then x is to the left of w",Baseline,0,True,96
+/ x / x ( Dodec ( x ) & ~ Large ( x ) & ~ Small ( x ) ),there is a dodecahedron x such that x is not large and x is not small,LoLa,2,False,69
+( ~ Large ( e ) $ ~ Large ( a ) ) & ( Large ( e ) $ Large ( a ) ),a is large just in case e is,Reference,0,True,28
+"/ x ( Cube ( x ) & Large ( x ) & LeftOf ( x , b ) & Cube ( x ) & Large ( x ) & BackOf ( x , c ) )",a large cube to the left of b is in back of c,Reference,0,True,45
+"@ x ( Cube ( x ) $ / y ( Tet ( y ) & SameSize ( x , y ) & RightOf ( y , x ) ) )","for all cubes x , there is a tetrahedron y such that x is of the same size as y and y is to the right of x",LoLa,2,False,106
+"@ x ( / y ( Cube ( x ) & FrontOf ( y , x ) ) $ ( Cube ( x ) & Small ( x ) ) )","if a cube has something in front of it, then it's small",Reference,0,True,55
+"~ ( FrontOf ( c , b ) | FrontOf ( d , b ) ) & ~ FrontOf ( d , c )",it is not the case that c is in front of b or d is in front of b and it is not the case that d is in front of c,Baseline,1,False,111
+"@ y @ x ( ( Cube ( y ) & Tet ( x ) ) $ LeftOf ( y , x ) )","for all y , for all tetrahedrons x , y is not a cube or y is to the left of x",LoLa,2,False,77
+"/ x ( Large ( x ) & Cube ( x ) & / y ( FrontOf ( x , y ) & Small ( y ) & Cube ( y ) ) )","there is an element x such that x is large , x is a cube and there is an element y such that x is in front of y , y is small and y is a cube",Ranta,2,False,140
+"@ x ( Dodec ( x ) $ @ y ~ ( Cube ( y ) & Larger ( y , x ) ) )",every dodecahedron is as large as every cube,Reference,3,False,44
+"~ / z ( Dodec ( z ) & / y BackOf ( y , z ) )",it is not the case that there is an element z such that z is a dodecahedron and there is an element y such that y is in back of z,Baseline,3,True,129
+"@ v ( ( Dodec ( v ) & / x ( Cube ( x ) & LeftOf ( v , x ) ) ) $ Large ( v ) )","for all dodecahedrons v , if v is to the left of some cube , then v is large",LoLa,2,False,76
+"~ @ x @ y @ z ( Adjoins ( a , x ) | Adjoins ( a , y ) | Adjoins ( a , z ) )","it is not the case that for all x , for all y , for all z , a is adjacent to x , adjacent to y or adjacent to z",Ranta,1,True,111
+/ x Dodec ( x ),something is a dodecahedron,LoLa,0,True,27
+"@ x / y ( ( Dodec ( x ) & LeftOf ( y , x ) ) $ ~ Dodec ( x ) )","for all x , there is an element y such that if x is a dodecahedron and y is to the left of x , then it is not the case that x is a dodecahedron",Baseline,1,False,143
+"Dodec ( b ) $ ~ ( ~ FrontOf ( b , d ) & BackOf ( b , d ) )","if b is a dodecahedron , then it is not the case that it is not the case that b is in front of d and b is in back of d",Baseline,1,False,118
+/ w ( Dodec ( w ) & Small ( w ) ),there is an element w such that w is a dodecahedron and w is small,Baseline,0,True,66
+"~ ( SameCol ( e , c ) & SameCol ( e , d ) ) & ~ ( SameCol ( e , c ) | SameCol ( e , d ) )",it is not the case that e is in the same column as c and e is in the same column as d and it is not the case that e is in the same column as c or e is in the same column as d,Baseline,1,False,174
+"@ v ( Cube ( v ) $ ( LeftOf ( v , b ) & RightOf ( v , a ) ) )",every cube is to the left of b and to the right of a,Ranta,3,True,52
+"@ y ( ( Small ( y ) & Cube ( y ) ) $ RightOf ( y , a ) )",each small cube is to the right of a,Reference,0,True,36
+( Tet ( a ) & Tet ( e ) ) | ( ~ ( Tet ( a ) & Tet ( e ) ) & Tet ( a ) & Tet ( f ) ),"at least one of these holds : \item a is a tetrahedron and e is a tetrahedron \item it is not the case that a is a tetrahedron and e is a tetrahedron , a is a tetrahedron and f is a tetrahedron",Ranta,1,True,193
+"@ x @ y ( ( LeftOf ( x , b ) & LeftOf ( y , a ) ) $ ~ Smaller ( y , x ) )","for all x , for all y , if x is to the left of b and y is to the left of a , then it is not the case that y is smaller than x",Baseline,1,False,125
+( ~ Cube ( e ) $ Large ( b ) ) | Large ( d ),"d is large , e is a cube or b is large",LoLa,0,True,38
+"@ x ( Tet ( x ) $ @ y ( Cube ( y ) $ ~ SameSize ( x , y ) ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+"@ x / y ( LeftOf ( x , a ) $ / y ( LeftOf ( y , b ) & ~ Larger ( x , y ) ) )","for all x , there is an element y such that if x is to the left of a , then there is an element y such that y is to the left of b and x is not larger than y",Ranta,2,False,156
+"~ FrontOf ( c , b ) & ~ FrontOf ( d , c ) & ~ FrontOf ( d , b ) & ~ FrontOf ( c , c )","c is not in front of b , d is not in front of c , d is not in front of b and c is not in front of itself",LoLa,0,True,104
+"@ x ( / z ( Cube ( z ) & Larger ( a , z ) & Tet ( x ) ) $ Smaller ( a , x ) )","for all x , if there is an element z such that z is a cube and a is larger than z and x is a tetrahedron , then a is smaller than x",Baseline,2,True,131
+"@ x ( ( Cube ( x ) $ FrontOf ( x , b ) ) | BackOf ( x , a ) )","for all x , if x is a cube , then x is in front of b or x is in back of a",Baseline,2,True,73
+"@ y @ x ( LeftOf ( y , a ) $ ~ ( LeftOf ( x , b ) & Smaller ( y , x ) ) )","for all y , for all x , y is not to the left of a , y is not smaller than x or x is not to the left of b",LoLa,2,False,104
+"( BackOf ( f , a ) | Smaller ( f , a ) ) & ( BackOf ( f , a ) | Smaller ( f , a ) )",f is in back of a or f is smaller than a and f is in back of a or f is smaller than a,Baseline,2,True,85
+"/ w ( Cube ( w ) & Larger ( a , w ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) )","if a is larger than some cube , then a is smaller than every tetrahedron",Ranta,3,True,72
+( Medium ( c ) $ ~ Cube ( d ) ) & ( Medium ( c ) $ ~ Cube ( e ) ) & ( Medium ( c ) $ ~ Cube ( f ) ),"if c is medium , then d is not a cube , e is not a cube and f is not a cube",LoLa,0,True,75
+@ x ( Cube ( x ) | Tet ( x ) ) & / x Cube ( x ) & / y Tet ( y ),"for all x , x is a cube or x is a tetrahedron , something is a cube and something is a tetrahedron",LoLa,1,True,98
+"~ / y ( LeftOf ( y , a ) & @ x ( LeftOf ( x , b ) $ Larger ( y , x ) ) )","it is not the case that there is an element y such that y is to the left of a and for all x , if x is to the left of b , then y is larger than x",Baseline,2,True,144
+@ z ( Even ( z ) $ ~ Prime ( z ) ),no even number is prime,Reference,3,False,23
+"@ x ( ( Cube ( x ) & Large ( x ) ) $ @ y ( RightOf ( y , x ) $ Small ( y ) ) )",everything to the right of a large cube is small,Reference,0,True,48
+"@ x / y ( Cube ( x ) $ ( RightOf ( y , x ) & Tet ( y ) & SameRow ( x , y ) ) )","for all cubes x , there is a tetrahedron y such that x is in the same row as y and y is to the right of x",LoLa,2,False,105
+"~ Large ( a ) & Larger ( a , c ) & ~ Large ( e ) & Larger ( e , c )","a and e are both larger than c, but neither is large",Reference,0,True,52
+"~ FrontOf ( c , b ) & ~ FrontOf ( c , b ) & ~ FrontOf ( d , c ) & ~ FrontOf ( d , b )",neither d nor c is in front of either c or b,Reference,3,False,44
+"@ x / w ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ LeftOf ( w , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ x ( ( Dodec ( x ) & ~ Small ( x ) ) $ / y RightOf ( y , x ) )",every dodecahedron with nothing to its right is small,Reference,3,False,53
+( Tet ( a ) $ ( Cube ( b ) | Cube ( d ) ) ) & ( Tet ( c ) $ ( Cube ( b ) | Cube ( d ) ) ),b or d is a cube if either a or c is a tetrahedron,Reference,0,True,50
+"~ FrontOf ( e , d ) $ ( Large ( e ) & Tet ( e ) )","if e is not in front of d , then e is large and e is a tetrahedron",Ranta,0,True,66
+~ / u ( Cube ( u ) & Large ( u ) ),it is not the case that some cube is large,Ranta,3,True,42
+"@ w @ y ( ( Tet ( w ) & Cube ( y ) ) $ ~ SameSize ( w , y ) )","for all w , for all y , if w is a tetrahedron and y is a cube , then it is not the case that w is of the same size as y",Baseline,1,False,119
+"BackOf ( d , b ) & FrontOf ( b , e )",d is in back of b and b is in front of e,Baseline,2,True,40
+"@ x ( Dodec ( x ) $ / z ( ~ RightOf ( z , x ) $ Small ( x ) ) )","for all dodecahedrons x , there is an element z such that if z is not to the right of x , then x is small",Ranta,2,False,105
+"Larger ( c , e ) $ Larger ( b , c )","if c is larger than e , then b is larger than c",Baseline,2,True,47
+"@ x ( ( Cube ( x ) & / v BackOf ( v , x ) ) $ Small ( x ) )","for all cubes x , nothing is in back of x or x is small",LoLa,2,False,55
+~ Small ( d ) & ~ Small ( c ) & Cube ( d ) & Cube ( c ),"d is not small , c is not small , d is a cube and c is a cube",Ranta,1,True,61
+"@ x ( ( LeftOf ( x , b ) $ LeftOf ( x , a ) ) & ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) )","for all x , if x is to the left of b , then x is to the left of a and for all x , if x is to the left of a , then x is to the left of b",LoLa,0,True,135
+"/ x ( LeftOf ( x , b ) & BackOf ( x , c ) )",something to the left of b is in back of c,Reference,0,True,42
+@ x ( ~ Pet ( x ) | ~ Person ( x ) ),"for all x , it is not the case that x is a pet or it is not the case that x is a person",Baseline,1,False,87
+"~ @ x ( Adjoins ( a , x ) & Adjoins ( a , b ) & Adjoins ( a , c ) )","if for all x , a is adjacent to b and adjacent to x , then a is not adjacent to c",LoLa,0,True,81
+"~ / x @ y ( ~ Tet ( x ) & ~ FrontOf ( y , x ) )","it is not the case that there is an element x such that for all y , x is not a tetrahedron and y is not in front of x",Ranta,3,True,117
+"~ Large ( e ) | FrontOf ( a , e )",it is not the case that e is large or a is in front of e,Baseline,1,False,56
+"~ / x ( ~ ( FrontOf ( x , e ) | BackOf ( x , e ) ) & Cube ( x ) )",it is not the case that there is an element x such that it is not the case that x is in front of e or x is in back of e and x is a cube,Baseline,1,False,135
+"/ x / y ( Cube ( x ) & Large ( x ) & Cube ( y ) & Small ( y ) & BackOf ( y , x ) )","there is an element x such that there is an element y such that x is a cube , x is large , y is a cube , y is small and y is in back of x",Ranta,1,True,137
+~ @ x ~ ~ ( Dodec ( x ) & Large ( x ) ),it is not the case that everything is large and everything is a dodecahedron,LoLa,3,True,76
+"~ SameShape ( d , e ) $ SameShape ( d , e )",d and e are the same shape,Reference,0,True,26
+/ x ( Large ( x ) $ ~ Dodec ( x ) ),"there is an element x such that if x is large , then it is not the case that x is a dodecahedron",Baseline,1,False,96
+"@ x ( Cube ( x ) $ @ y ~ LeftOf ( y , x ) )","for all cubes x , for all y , y is not to the left of x",Ranta,2,False,55
+"@ x / y ( ( Dodec ( x ) & ~ RightOf ( x , y ) ) $ LeftOf ( x , y ) )","for all x , there is an element y such that if x is a dodecahedron and it is not the case that x is to the right of y , then x is to the left of y",Baseline,1,False,146
+"( SameSize ( d , b ) & SameSize ( b , d ) ) | ~ SameShape ( d , b )","if d is of the same shape as b , then b is of the same size as d and d is of the same size as b",LoLa,0,True,95
+"@ x ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ / u LeftOf ( u , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ x @ y ( ( Cube ( x ) & Cube ( y ) ) $ SameCol ( x , y ) )",none of the cubes is to the right of any of the other cubes,Reference,3,False,59
+"~ / x ~ ( Cube ( x ) $ ( RightOf ( x , a ) & LeftOf ( x , b ) ) )","it is not the case that there is an element x such that it is not the case that if x is a cube , then x is to the right of a and x is to the left of b",Baseline,3,True,150
+/ z ( Dodec ( z ) & ~ Large ( z ) & ~ Small ( z ) ),there is an element z such that z is a dodecahedron and it is not the case that z is large and it is not the case that z is small,Baseline,1,False,129
+"@ x ( ~ Large ( x ) $ ~ @ y ~ FrontOf ( y , x ) )","for all x , if x is not large , then it is not the case that for all y , y is not in front of x",Ranta,1,True,95
+"@ x ( Cube ( x ) $ @ y ( Cube ( y ) $ SameCol ( y , x ) ) )",every cube is in the same column as every cube,Ranta,3,True,46
+"~ / x ~ @ z ( Dodec ( x ) $ ~ BackOf ( z , x ) )","it is not the case that there is an element x such that it is not the case that for all z , if x is a dodecahedron , then it is not the case that z is in back of x",Baseline,1,False,163
+"@ x ( LeftOf ( b , x ) $ ~ Cube ( x ) )","for all x , if b is to the left of x , then x is not a cube",Ranta,0,True,59
+"@ x @ y ( LeftOf ( x , b ) $ ( LeftOf ( y , a ) $ ~ Smaller ( y , x ) ) )","for all x , for all y , if x is to the left of b , then if y is to the left of a , then it is not the case that y is smaller than x",Baseline,1,False,131
+"@ x ( / v ( Large ( v ) & Cube ( v ) & RightOf ( x , v ) ) $ Small ( x ) )","for all x , if there is an element v such that v is large , v is a cube and x is to the right of v , then x is small",Ranta,0,True,116
+/ v ( Dodec ( v ) & @ z ~ Small ( v ) ),"there is an element v such that v is a dodecahedron and for all z , it is not the case that v is small",Baseline,1,False,102
+/ x Cube ( x ) & / x Tet ( x ) & @ x ( Cube ( x ) | Tet ( x ) ),"there is an element x such that x is a cube , there is an element x such that x is a tetrahedron and for all x , x is a cube or x is a tetrahedron",Ranta,1,True,146
+"/ x Cube ( x ) $ @ x ( Cube ( x ) $ ~ ( SameCol ( x , a ) | SameCol ( x , b ) ) )","if there is an element x such that x is a cube , then for all cubes x , it is not the case that x is in the same column as a or in the same column as b",Ranta,1,True,151
+"/ x ( ( Cube ( x ) & Smaller ( x , a ) ) $ @ y ( Tet ( y ) $ Smaller ( x , y ) ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"Larger ( e , c ) & Larger ( a , c ) & ~ Large ( e ) & ~ Large ( a )","a and e are both larger than c, but neither is large",Reference,0,True,52
+( Tet ( a ) & Tet ( e ) ) | ( Tet ( a ) & Tet ( f ) & ~ ( Tet ( e ) & Tet ( f ) ) ),either both a and e are tetrahedra or both a and f are,Reference,3,False,54
+"@ x ( Dodec ( x ) $ / z ( SameSize ( x , z ) & Cube ( z ) ) )","for all dodecahedrons x , there is an element z such that x is of the same size as z and z is a cube",Ranta,2,False,100
+"@ y ( Tet ( y ) $ ~ / x ( SameSize ( y , x ) & Cube ( x ) ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+/ x / y ( Cube ( x ) & Tet ( y ) & ~ / z Dodec ( z ) ),there is an element x such that there is a tetrahedron y such that nothing is a dodecahedron and x is a cube,LoLa,0,True,108
+"@ u ( ( Dodec ( u ) & ~ / y RightOf ( y , u ) ) $ / z RightOf ( u , z ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"/ x @ z ( ( Cube ( x ) & Larger ( a , x ) ) $ ( Tet ( z ) $ Smaller ( x , z ) ) )","there is an element x such that for all z , if x is a cube and a is larger than x , then if z is a tetrahedron , then x is smaller than z",Baseline,2,True,137
+"~ / x / y ( Dodec ( x ) & Cube ( y ) & Smaller ( x , y ) )","it is not the case that there is an element x such that there is an element y such that x is a dodecahedron , y is a cube and x is smaller than y",Ranta,2,False,145
+"@ x @ y ( Smaller ( x , y ) $ FrontOf ( x , y ) )","the further back something is, the larger it is",Reference,0,True,47
+"@ x ( Dodec ( x ) & LeftOf ( e , x ) ) $ ~ Dodec ( e )","if e is to the left of every dodecahedron, then it is not a dodecahedron",Reference,2,True,72
+"/ x ( Cube ( x ) & Large ( x ) & Large ( x ) & RightOf ( b , x ) )",there is a cube x such that x is large and b is to the right of x,LoLa,1,True,65
+"@ z ( Cube ( z ) $ ( FrontOf ( z , e ) | BackOf ( z , e ) ) )",every cube is in front of e or in back of e,Ranta,3,True,43
+"/ y ( Cube ( y ) & Larger ( a , y ) ) $ @ x ( Tet ( x ) $ Smaller ( a , x ) )","if there is an element y such that y is a cube and a is larger than y , then for all x , if x is a tetrahedron , then a is smaller than x",Baseline,2,True,137
+"@ x ( SameCol ( x , b ) | SameCol ( x , a ) | SameCol ( c , x ) )","everything is in the same column as a, b, or c",Reference,0,True,46
+"@ x @ y ( Dodec ( y ) $ / z ( Cube ( z ) & SameSize ( y , z ) ) )","for all x , every dodecahedron is of the same size as some cube",Ranta,3,True,63
+/ z ( Prime ( z ) & ~ Even ( z ) ),there is a prime z such that z is not even,Ranta,2,False,42
+"/ x @ y ( Cube ( x ) & Large ( x ) & ( ( Cube ( y ) & Small ( y ) ) $ FrontOf ( x , y ) ) )","there is an element x such that for all y , all these hold : \item x is a cube , x is large \item if y is a cube and y is small , then x is in front of y",Ranta,2,False,153
+"@ x / y ( ( Cube ( x ) & ( Tet ( y ) | Dodec ( y ) | Cube ( y ) ) ) $ BackOf ( y , x ) )",every cube has something behind it,Reference,3,False,34
+"@ x @ y ( RightOf ( y , x ) $ ~ Cube ( y ) )",some cube is to the right of nothing,LoLa,3,True,36
+"@ x @ y ( Dodec ( x ) $ ( Cube ( y ) $ ~ Larger ( y , x ) ) )","for all dodecahedrons x , for all cubes y , y is not larger than x",LoLa,2,False,66
+~ Small ( a ) $ ( Dodec ( d ) & Small ( d ) ),"if it is not the case that a is small , then d is a dodecahedron and d is small",Baseline,1,False,79
+~ / y ( Pet ( y ) & Person ( y ) ),"for all pets y , y is not a person",LoLa,2,False,34
+"/ x / y ( Large ( x ) & Cube ( x ) & @ y ( ( Small ( y ) & Cube ( y ) ) $ BackOf ( y , x ) ) )","there is an element x such that there is an element y such that x is large and x is a cube and for all y , if y is small and y is a cube , then y is in back of x",Baseline,0,True,161
+@ t ~ ( Tet ( t ) & Large ( t ) ),"for all t , it is not the case that t is a tetrahedron and t is large",Baseline,1,False,69
+/ z ( Dodec ( z ) & ~ ( Small ( z ) | Large ( z ) ) ),it is not the case that every dodecahedron is large or small,LoLa,3,True,60
+Cube ( d ) & Cube ( c ) & ~ ( Small ( d ) | Small ( c ) ),"d is a cube , c is a cube and it is not the case that d or c is small",Ranta,0,True,69
+"@ x @ y ( Dodec ( x ) $ ( Cube ( y ) $ ( SameSize ( x , y ) | Larger ( x , y ) ) ) )","for all dodecahedrons x , for all cubes y , x is of the same size as y or larger than y",LoLa,2,False,87
+"~ / w ( LeftOf ( w , a ) & @ x ( LeftOf ( x , b ) $ Larger ( w , x ) ) )","for all w , if for all x , x is not to the left of b or w is larger than x , then w is not to the left of a",LoLa,2,False,107
+"~ / w FrontOf ( w , b )",it is not the case that there is an element w such that w is in front of b,Baseline,2,True,74
+/ x ( Cube ( x ) | Tet ( x ) ) & @ z ( Cube ( z ) | Tet ( z ) ),there are only cubes and tetrahedra,Reference,3,False,35
+"@ x ( ~ Cube ( x ) | ( Cube ( x ) & FrontOf ( x , e ) ) | ( Cube ( x ) & BackOf ( x , e ) ) )","for all x , it is not the case that x is a cube or x is a cube and x is in front of e or x is a cube and x is in back of e",Baseline,1,False,122
+"~ ( RightOf ( a , c ) & LeftOf ( a , b ) ) & ~ ( LeftOf ( e , b ) & RightOf ( e , c ) )",it is not the case that a is to the right of c and to the left of b or e is to the left of b and to the right of c,LoLa,1,True,114
+"@ y ( Dodec ( y ) $ ~ / v BackOf ( v , y ) )","for all y , if y is a dodecahedron , then it is not the case that there is an element v such that v is in back of y",Baseline,3,True,115
+"FrontOf ( b , d ) & BackOf ( e , b ) & Larger ( d , b ) & Larger ( e , b )","b is in front of d , e is in back of b , d is larger than b and e is larger than b",Ranta,2,False,82
+"@ x ( / y ( Dodec ( x ) & Cube ( y ) & RightOf ( y , x ) ) $ Large ( x ) )","for all x , if there is an element y such that x is a dodecahedron , y is a cube and y is to the right of x , then x is large",Ranta,0,True,125
+"/ x ( BackOf ( x , c ) & LeftOf ( x , b ) )",something to the left of b is in back of c,Reference,0,True,42
+"@ x / y / z ( ( Dodec ( x ) & ~ RightOf ( z , x ) ) $ LeftOf ( z , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ x ( ~ / y ( Dodec ( x ) $ RightOf ( y , x ) ) $ / z LeftOf ( z , x ) )","for all x , something is to the left of x , x is not a dodecahedron or something is to the right of x",LoLa,2,False,101
+"@ x @ y ( BackOf ( y , x ) $ Larger ( y , x ) ) & @ y @ z ( BackOf ( z , y ) $ Larger ( z , y ) )","for all x , for all y , if y is in back of x , then y is larger than x and for all y , for all z , if z is in back of y , then z is larger than y",Baseline,2,True,145
+@ z ~ Cube ( z ),there are no cubes,Reference,3,False,18
+"FrontOf ( e , d ) | ( Large ( e ) & Tet ( e ) )",at least one of these holds : \item e is in front of d \item e is large and e is a tetrahedron,Ranta,2,False,94
+"~ / y ( Dodec ( y ) & / x FrontOf ( y , x ) )",every dodecahedron is in front of nothing,LoLa,3,True,41
+"@ x ( ( Cube ( x ) & Small ( x ) ) $ / z ( BackOf ( x , z ) & Cube ( z ) & Large ( z ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+"@ x / y / z ( ~ Dodec ( x ) | RightOf ( y , x ) | LeftOf ( z , x ) )","for all x , there is an element y such that there is an element z such that x is not a dodecahedron , y is to the right of x or z is to the left of x",Ranta,0,True,149
+"@ y @ x ( ( BackOf ( y , x ) & Cube ( y ) & Dodec ( x ) ) $ Smaller ( y , x ) )","for all y , for all x , if y is in back of x and y is a cube and x is a dodecahedron , then y is smaller than x",Baseline,1,False,111
+"~ / x / y ( Dodec ( x ) & Cube ( y ) & LeftOf ( x , y ) & ~ Large ( x ) )",any dodecahedron to the left of a cube is large,Reference,3,False,47
+"@ x ( Cube ( x ) $ / y ( ( Tet ( y ) $ FrontOf ( x , y ) ) $ Large ( x ) ) )","for all cubes x , if x is in front of every tetrahedron , then x is large",LoLa,2,False,73
+"@ x @ y ( LeftOf ( x , a ) $ ~ ( Smaller ( x , y ) & LeftOf ( y , b ) ) )",nothing to the left of a is smaller than anything to the left of b,Reference,0,True,66
+"@ x ( ( Cube ( x ) & Larger ( a , x ) ) $ @ x ( Tet ( x ) $ Smaller ( a , x ) ) )","if a is larger than some cube , then a is smaller than every tetrahedron",LoLa,3,True,72
+"@ x ( / z ( RightOf ( x , z ) & Large ( z ) & Cube ( z ) ) $ Small ( x ) )",everything to the right of a large cube is small,Reference,0,True,48
+"FrontOf ( b , d ) & FrontOf ( b , e ) & Smaller ( b , d ) & Smaller ( b , e )",d and e are both in back of b and larger than it,Reference,0,True,48
+~ Small ( c ) & ~ Small ( d ) & Cube ( d ) & Cube ( c ),"both d and c are cubes, however neither of them is small",Reference,3,False,56
+"SameCol ( a , d ) & SameRow ( e , d ) & SameCol ( b , e )","a is in the same column as d , e is in the same row as d and b is in the same column as e",Ranta,0,True,89
+"@ z ( ( Cube ( z ) & Larger ( a , z ) ) $ @ v ( Tet ( v ) $ Smaller ( a , v ) ) )","if a is larger than some cube , then a is smaller than every tetrahedron",LoLa,3,True,72
+"~ ( FrontOf ( c , b ) | FrontOf ( d , c ) | FrontOf ( c , c ) | FrontOf ( d , b ) )",it is not the case that c is in front of b or d is in front of c or c is in front of c or d is in front of b,Baseline,1,False,108
+~ @ z ~ ( Cube ( z ) & Large ( z ) ),"it is not the case that for all z , it is not the case that z is a cube and z is large",Baseline,1,False,86
+"/ x / y ( Cube ( y ) & Tet ( x ) & ~ Smaller ( y , x ) )",there is an element x such that there is an element y such that y is a cube and x is a tetrahedron and it is not the case that y is smaller than x,Baseline,1,False,146
+"@ v ( Dodec ( v ) & LeftOf ( e , v ) ) $ ~ Dodec ( e )","if for all v , v is a dodecahedron and e is to the left of v , then it is not the case that e is a dodecahedron",Baseline,1,False,111
+"~ ( Tet ( a ) & FrontOf ( a , b ) ) $ ~ Tet ( a )","if a is a tetrahedron , then a is a tetrahedron and a is in front of b",LoLa,2,False,70
+"@ x ( ~ Dodec ( x ) | LeftOf ( e , x ) ) $ ~ Dodec ( e )","if for all x , it is not the case that x is a dodecahedron or e is to the left of x , then it is not the case that e is a dodecahedron",Baseline,1,False,134
+"/ x ( Dodec ( x ) & ( LeftOf ( e , x ) $ ~ Dodec ( e ) ) )","there is an element x such that x is a dodecahedron and if e is to the left of x , then it is not the case that e is a dodecahedron",Baseline,1,False,131
+Tet ( a ) & ( Tet ( f ) | Tet ( e ) ),either both a and e are tetrahedra or both a and f are,Reference,3,False,54
+"@ y ( Tet ( y ) $ ~ / x ( Cube ( x ) & SameSize ( x , y ) ) )","for all y , if y is a tetrahedron , then it is not the case that there is an element x such that x is a cube and x is of the same size as y",Baseline,3,True,139
+@ x ( Cube ( x ) $ ~ Medium ( x ) ) & @ x ( Medium ( x ) $ ~ Cube ( x ) ),there are no medium-sized cubes,Reference,3,False,31
+"@ x ( Cube ( x ) $ ( ~ FrontOf ( x , e ) $ BackOf ( x , e ) ) )","for all x , if x is a cube , then if it is not the case that x is in front of e , then x is in back of e",Baseline,1,False,104
+"@ x ( Cube ( x ) $ / y ( Tet ( y ) & LeftOf ( x , y ) & SameSize ( y , x ) ) )","for all x , if x is a cube , then there is an element y such that y is a tetrahedron and x is to the left of y and y is of the same size as x",Baseline,0,True,141
+( Tet ( a ) & Tet ( e ) ) | ( Tet ( a ) & Tet ( f ) & ~ ( Tet ( a ) & Tet ( e ) & Tet ( f ) ) ),"at least one of these holds : \item a is a tetrahedron and e is a tetrahedron \item a is a tetrahedron , f is a tetrahedron and it is not the case that a is a tetrahedron , e is a tetrahedron and f is a tetrahedron",Ranta,1,True,214
+"@ x / y ( ~ Large ( x ) $ FrontOf ( y , x ) )","for all x , there is an element y such that if it is not the case that x is large , then y is in front of x",Baseline,1,False,107
+"@ x ( ( Dodec ( x ) & @ y ~ LeftOf ( x , y ) ) $ / y LeftOf ( y , x ) )","for all dodecahedrons x , x is to the left of something or something is to the left of x",LoLa,2,False,88
+"~ ~ ( BackOf ( d , b ) & BackOf ( e , b ) )",d and e are in back of b,LoLa,0,True,24
+"@ x ( ( Dodec ( x ) & @ y ~ LeftOf ( y , x ) ) $ / z RightOf ( z , x ) )","for all x , if x is a dodecahedron and for all y , y is not to the left of x , then there is an element z such that z is to the right of x",Ranta,0,True,138
+"@ y @ x ~ ( LeftOf ( x , a ) & LeftOf ( y , b ) & Smaller ( x , y ) )",nothing to the left of a is smaller than anything to the left of b,Reference,0,True,66
+"~ / x ( Cube ( x ) & / y ( RightOf ( y , x ) & Cube ( y ) ) )",none of the cubes is to the right of any of the other cubes,Reference,3,False,59
+"@ x @ y ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ / y LeftOf ( y , x ) )","for all x , something is to the right of x , x is not a dodecahedron or something is to the left of x",LoLa,2,False,101
+"@ y / z ( ( Dodec ( y ) & ~ RightOf ( z , y ) ) $ Small ( y ) )","for all y , there is an element z such that if y is a dodecahedron and it is not the case that z is to the right of y , then y is small",Baseline,1,False,135
+"( Smaller ( d , c ) | SameSize ( d , c ) ) & ( Smaller ( e , c ) | SameSize ( e , c ) )",d and e are smaller than c or of the same size as c,Ranta,0,True,51
+"/ x ( RightOf ( b , x ) & Large ( x ) & Cube ( x ) )",there is an element x such that b is to the right of x and x is large and x is a cube,Baseline,0,True,85
+"Dodec ( e ) $ / x ( Dodec ( x ) & ~ LeftOf ( e , x ) )","if e is to the left of every dodecahedron, then it is not a dodecahedron",Reference,2,True,72
+"@ x ( Dodec ( x ) $ ( / y ( Cube ( y ) & RightOf ( y , x ) ) $ Large ( x ) ) )",any dodecahedron to the left of a cube is large,Reference,3,False,47
+"@ z @ v ( ( LeftOf ( z , a ) & LeftOf ( v , b ) ) $ ~ Smaller ( z , v ) )",nothing to the left of a is smaller than anything to the left of b,Reference,0,True,66
+"SameCol ( a , d ) & SameCol ( b , e ) & SameRow ( d , e )","b is in the same column as e, which is in the same row as d, which in turn is in the same column as a",Reference,0,True,101
+~ Small ( c ) & Cube ( c ) & ~ Small ( d ) & Cube ( d ),"c is not small , c is a cube , d is not small and d is a cube",Ranta,0,True,61
+"@ y ~ / x ( Cube ( x ) & Cube ( y ) & RightOf ( x , y ) )",none of the cubes is to the right of any of the other cubes,Reference,3,False,59
+/ y ( Dodec ( y ) & ~ ( Large ( y ) | Small ( y ) ) ),there is an element y such that y is a dodecahedron and it is not the case that y is large or y is small,Baseline,1,False,104
+"@ x ( / y / z ( Cube ( y ) & BackOf ( x , y ) & FrontOf ( x , z ) & Cube ( z ) ) $ ~ Large ( x ) )","for all x , if there is an element y such that there is an element z such that y is a cube and x is in back of y and x is in front of z and z is a cube , then it is not the case that x is large",Baseline,1,False,193
+"~ ( FrontOf ( d , b ) | FrontOf ( c , b ) | FrontOf ( c , c ) | FrontOf ( d , c ) )",it is not the case that d is in front of b or c is in front of b or c is in front of c or d is in front of c,Baseline,1,False,108
+"/ y @ x ( Tet ( x ) $ BackOf ( x , y ) )",there is an element y such that every tetrahedron is in back of y,Ranta,3,True,65
+"@ x ( @ y ( Dodec ( y ) $ LeftOf ( x , y ) ) $ ~ Dodec ( x ) )","for all x , if x is to the left of every dodecahedron , then x is not a dodecahedron",Ranta,2,False,84
+"@ y ( Tet ( y ) $ ~ / x ( SameSize ( y , x ) & Cube ( x ) ) )","for all tetrahedrons y , it is not the case that there is an element x such that y is of the same size as x and x is a cube",Ranta,2,False,123
+"@ x @ y ( ( Cube ( y ) & Cube ( x ) ) $ ~ RightOf ( y , x ) )","for all x , for all y , if y is a cube and x is a cube , then it is not the case that y is to the right of x",Baseline,1,False,108
+"@ x ( ( Dodec ( x ) & ~ / v RightOf ( v , x ) ) $ / y LeftOf ( y , x ) )","for all dodecahedrons x , something is to the right of x or something is to the left of x",LoLa,2,False,89
+"~ ~ ( Smaller ( c , a ) & Larger ( c , e ) )",it is not the case that it is not the case that c is smaller than a and larger than e,Ranta,1,True,85
+"~ FrontOf ( a , b ) $ ~ Tet ( a )","if it is not the case that a is in front of b , then it is not the case that a is a tetrahedron",Baseline,1,False,95
+/ z ( Prime ( z ) & ~ Even ( z ) ),some prime is not even,Reference,3,False,22
+"@ x / z ( ( Dodec ( x ) & @ y ~ RightOf ( y , x ) ) $ Small ( x ) )",every dodecahedron with nothing to its right is small,Reference,3,False,53
+"/ x / y ( Large ( x ) & Small ( y ) & Cube ( x ) & Cube ( y ) & FrontOf ( x , y ) )","there is an element x such that there is an element y such that x is large , y is small , x is a cube , y is a cube and x is in front of y",Ranta,2,False,138
+"@ y / x ( Tet ( y ) $ BackOf ( y , x ) )",every tetrahedron is in back of something,Reference,3,False,41
+/ w ( Dodec ( w ) & ~ ( Small ( w ) | Large ( w ) ) ),some dodecahedron is neither large nor small,Reference,3,False,44
+"/ x ( Cube ( x ) & Larger ( a , x ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) )","if there is an element x such that x is a cube and a is larger than x , then for all y , if y is a tetrahedron , then a is smaller than y",Baseline,2,True,137
+"@ z ( Dodec ( z ) $ / w ( Cube ( w ) & SameSize ( z , w ) ) )",every dodecahedron is of the same size as some cube,Ranta,3,True,51
+"@ x @ y ( Tet ( x ) $ @ y ( Cube ( y ) $ ~ SameSize ( x , y ) ) )","for all tetrahedrons x , for all cubes y , x is not of the same size as y",LoLa,2,False,73
+( Student ( max ) & ~ Student ( claire ) ) | ( ~ Student ( max ) & Student ( claire ) ),max is a student if and only if claire is not,Reference,0,True,45
+"@ x ( ( Dodec ( x ) & @ y ~ LeftOf ( x , y ) ) $ / y RightOf ( x , y ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"( Cube ( c ) & Cube ( b ) ) $ ( SameRow ( c , b ) & ~ SameCol ( b , c ) )","if c is a cube and b is a cube , then c is in the same row as b and b is not in the same column as c",Ranta,1,True,100
+"~ / x ( Cube ( x ) & LeftOf ( x , a ) )","for all cubes x , x is not to the left of a",LoLa,2,False,43
+"Tet ( a ) & ( SameShape ( a , f ) | SameShape ( a , e ) )",either both a and e are tetrahedra or both a and f are,Reference,3,False,54
+@ x ( Dodec ( x ) $ ( Medium ( x ) | Large ( x ) | Small ( x ) ) ),"every dodecahedron is medium , large or small",Ranta,3,True,45
+"@ y ( ( Dodec ( y ) & @ z ~ RightOf ( z , y ) ) $ / x LeftOf ( x , y ) )","for all dodecahedrons y , something is to the right of y or something is to the left of y",LoLa,2,False,89
+"@ y ( Cube ( y ) $ / x ( Tet ( x ) & SameSize ( y , x ) & LeftOf ( y , x ) ) )","for all cubes y , there is a tetrahedron x such that y is of the same size as x and to the left of x",LoLa,2,False,100
+"~ SameSize ( d , e ) $ SameSize ( d , e )","if d is not of the same size as e , then d is of the same size as e",Ranta,0,True,67
+"@ y ( ( Small ( y ) & Cube ( y ) ) $ LeftOf ( a , y ) )","for all y , if y is small and y is a cube , then a is to the left of y",Baseline,0,True,70
+~ ( Cube ( a ) | Cube ( c ) | Cube ( e ) ) $ ( Cube ( a ) | Cube ( c ) | Cube ( e ) ),"a is a cube , c is a cube or e is a cube",LoLa,1,True,40
+"/ x ( Large ( x ) & Cube ( x ) & RightOf ( b , x ) & FrontOf ( c , x ) )",there is an element x such that x is large and x is a cube and b is to the right of x and c is in front of x,Baseline,2,True,108
+/ x ( ~ ( Prime ( x ) & Even ( x ) ) & Prime ( x ) ),there is an element x such that it is not the case that x is a prime and x is even and x is a prime,Baseline,1,False,99
+"@ x ~ / y ( Cube ( y ) & RightOf ( y , x ) )","for all x , it is not the case that some cube is to the right of x",Ranta,3,True,66
+~ ( Tet ( a ) & Tet ( c ) ) | Large ( a ) | Large ( c ),"if c is a tetrahedron and a is a tetrahedron , then a or c is large",LoLa,1,True,67
+"@ x @ y ( ~ Larger ( y , x ) $ ~ BackOf ( y , x ) )","for all x , for all y , y is not in back of x or y is larger than x",LoLa,2,False,67
+"~ / y / x ( Dodec ( x ) & BackOf ( y , x ) )",it is not the case that there is an element y such that y is in back of some dodecahedron,Ranta,3,True,89
+"( SameShape ( a , e ) | SameShape ( a , f ) ) & Tet ( a )",either both a and e are tetrahedra or both a and f are,Reference,3,False,54
+"@ y @ z ( BackOf ( y , z ) $ Larger ( y , z ) )","the further back a thing is, the larger it is",Reference,0,True,45
+"@ x ( @ y ( Dodec ( y ) $ LeftOf ( x , y ) ) $ ~ Dodec ( x ) )","for all x , if for all y , if y is a dodecahedron , then x is to the left of y , then it is not the case that x is a dodecahedron",Baseline,1,False,129
+"@ x ( / y / z ( BackOf ( x , y ) & Cube ( y ) & FrontOf ( x , z ) & Cube ( z ) ) $ ~ Large ( x ) )",nothing in back of a cube and in front of a cube is large,Reference,0,True,57
+"@ y ( ( Cube ( y ) & / u BackOf ( u , y ) ) $ Small ( y ) )","for all cubes y , nothing is in back of y or y is small",LoLa,2,False,55
+"@ y ( Dodec ( y ) $ / x ( ~ RightOf ( x , y ) $ Small ( y ) ) )","for all dodecahedrons y , something is to the right of y or y is small",LoLa,2,False,70
+"@ x ( ( Small ( x ) & Cube ( x ) ) $ / y ( Large ( y ) & Cube ( y ) & BackOf ( x , y ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+"@ x ( @ w ~ BackOf ( w , x ) $ Cube ( x ) )","for all x , x is a cube or something is in back of x",LoLa,0,True,52
+"@ z ( LeftOf ( z , a ) $ ~ @ y ( LeftOf ( y , b ) $ Larger ( z , y ) ) )","for all z , if for all y , if y is to the left of b , then z is larger than y , then z is not to the left of a",LoLa,2,False,110
+"@ x ( ~ / y BackOf ( x , y ) $ Large ( x ) )","for all x , if it is not the case that there is an element y such that x is in back of y , then x is large",Baseline,3,True,106
+"~ / z ( ~ Large ( z ) & ~ / w FrontOf ( w , z ) )",only large objects have nothing in front of them,Reference,0,True,48
+@ x @ y @ z ( ( Cube ( x ) | Cube ( y ) ) $ ~ Dodec ( z ) ),there are only cubes and tetrahedra,Reference,3,False,35
+"@ x ( Cube ( x ) $ ( ~ SameCol ( x , b ) & ~ SameCol ( a , x ) ) )","for all x , if x is a cube , then it is not the case that x is in the same column as b and it is not the case that a is in the same column as x",Baseline,1,False,143
+"@ x @ y ( FrontOf ( x , y ) $ ( Cube ( y ) $ Small ( y ) ) )","for all x , for all cubes y , y is small or x is not in front of y",LoLa,1,True,66
+"@ x @ y ( ( Cube ( x ) & Cube ( y ) ) $ ~ RightOf ( x , y ) )",none of the cubes is to the right of any of the other cubes,Reference,3,False,59
+"@ y ( SameCol ( y , a ) | SameCol ( y , b ) | SameCol ( y , c ) )","for all y , y is in the same column as a , in the same column as b or in the same column as c",Ranta,0,True,93
+"SameShape ( d , b ) $ ( SameSize ( b , d ) & SameShape ( d , b ) )",d is the same shape as b only if they are the same size,Reference,3,False,55
+"@ x / y ( ( Dodec ( x ) & @ z ~ RightOf ( z , x ) ) $ LeftOf ( y , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ w ( Smaller ( w , a ) $ Cube ( w ) )","for all w , if w is smaller than a , then w is a cube",Baseline,2,True,53
+"FrontOf ( a , f ) | Smaller ( f , a )",f is either in back of or smaller than a,Reference,0,True,40
+/ x Cube ( x ) & / y Tet ( y ) & @ z ~ Dodec ( z ),"there is an element x such that x is a cube , there is an element y such that y is a tetrahedron and for all z , z is not a dodecahedron",Ranta,0,True,136
+"~ / x / y ( Smaller ( x , y ) & LeftOf ( x , a ) & LeftOf ( y , b ) )","for all x , for all y , if x is smaller than y and to the left of a , then y is not to the left of b",LoLa,2,False,100
+@ y ( ~ Cube ( y ) | ~ Large ( y ) ),no cube is large,Reference,3,False,16
+"@ x ( ( Tet ( x ) & / y ( Cube ( y ) & SameSize ( x , y ) ) ) $ ~ Tet ( x ) )","for all tetrahedrons x , if x is of the same size as some cube , then x is not a tetrahedron",LoLa,2,False,92
+"@ v @ w ( ( Tet ( v ) & Cube ( w ) ) $ ~ SameSize ( v , w ) )","for all v , for all w , if v is a tetrahedron and w is a cube , then it is not the case that v is of the same size as w",Baseline,1,False,119
+"@ x @ x @ y ( ( Dodec ( x ) & Cube ( y ) & LeftOf ( x , y ) ) $ Large ( x ) )","for all x , for all y , if x is a dodecahedron , y is a cube and x is to the left of y , then x is large",LoLa,0,True,104
+"@ x ( Dodec ( x ) $ / y ( ~ RightOf ( x , y ) $ / z LeftOf ( x , z ) ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"/ w ( Large ( w ) & Cube ( w ) & RightOf ( b , w ) )",there is a cube w such that b is to the right of w and w is large,LoLa,2,False,65
+/ w ( Dodec ( w ) & ~ Small ( w ) & ~ Large ( w ) ),there is a dodecahedron w such that w is not small and w is not large,LoLa,2,False,69
+"@ x ( Adjoins ( a , x ) | ~ Adjoins ( a , x ) ) & ~ @ x Adjoins ( a , x )",it is not the case that a is adjacent to everything,LoLa,1,True,51
+"@ y ( Dodec ( y ) $ / x ( Cube ( x ) & SameSize ( x , y ) ) )","for all y , if y is a dodecahedron , then there is an element x such that x is a cube and x is of the same size as y",Baseline,0,True,116
+"@ v ~ Adjoins ( a , v )","for all v , it is not the case that a is adjacent to v",Baseline,1,False,54
+/ x Cube ( x ) & / y Cube ( y ) & @ x ( Cube ( x ) | Tet ( x ) ),"there is an element x such that x is a cube , there is an element y such that y is a cube and for all x , x is a cube or x is a tetrahedron",Ranta,1,True,139
+Large ( b ) | Large ( d ) | Cube ( e ),b is large or d is large or e is a cube,Baseline,1,False,39
+"@ y ( LeftOf ( y , a ) $ / z ~ ( LeftOf ( z , b ) $ Larger ( y , z ) ) )","for all y , if y is to the left of a , then there is an element z such that it is not the case that if z is to the left of b , then y is larger than z",Baseline,2,True,150
+"@ y ( Cube ( y ) $ / x ( Tet ( x ) & RightOf ( x , y ) & SameRow ( x , y ) ) )","for all cubes y , there is an element x such that x is a tetrahedron , x is to the right of y and x is in the same row as y",Ranta,2,False,123
+"@ x ( Cube ( x ) $ / y ( RightOf ( y , x ) & Tet ( y ) & SameRow ( x , y ) ) )","for all cubes x , there is a tetrahedron y such that x is in the same row as y and y is to the right of x",LoLa,2,False,105
+"@ y @ x ( Cube ( y ) $ ~ RightOf ( y , x ) )",no cube is to the right of anything,Reference,3,False,35
+"@ z ( ( / y ( Cube ( y ) & Larger ( a , y ) ) & Tet ( z ) ) $ Smaller ( a , z ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"@ x ( ( Dodec ( x ) & ~ / y BackOf ( y , x ) ) | ~ Dodec ( x ) )",no dodecahedron has anything in back of it,Reference,0,True,42
+/ x ( Cube ( x ) & / x ( Cube ( x ) & Large ( x ) ) ),there is an element x such that x is a cube and there is an element x such that x is a cube and x is large,Baseline,0,True,106
+"@ u ( ( Dodec ( u ) & / y ( Cube ( y ) & LeftOf ( u , y ) ) ) $ Large ( u ) )","for all u , if u is a dodecahedron and there is an element y such that y is a cube and u is to the left of y , then u is large",Baseline,0,True,126
+"/ t ( Large ( t ) & Cube ( t ) & LeftOf ( t , b ) & BackOf ( t , c ) )","some cube is to the left of b , in back of c and large",LoLa,3,True,54
+/ u ( Even ( u ) & Prime ( u ) ),some prime is even,Reference,3,False,18
+"/ y ( RightOf ( b , y ) & Large ( y ) & Cube ( y ) )",there is a cube y such that b is to the right of y and y is large,LoLa,2,False,65
+"@ x / y ( Dodec ( x ) $ ( ~ / y RightOf ( y , x ) $ / z LeftOf ( z , x ) ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+@ v ( Cube ( v ) $ ~ Medium ( v ) ),there are no medium-sized cubes,Reference,3,False,31
+"/ v / v ( Large ( v ) & Cube ( v ) & LeftOf ( v , b ) & BackOf ( v , c ) )","some cube is to the left of b , in back of c and large",LoLa,3,True,54
+"~ / x ( Tet ( x ) & / y ( ~ FrontOf ( x , y ) & Dodec ( y ) ) )",it is not the case that there is a tetrahedron x such that there is an element y such that x is not in front of y and y is a dodecahedron,Ranta,0,True,137
+"@ y ( ( Dodec ( y ) & ~ Dodec ( e ) ) $ LeftOf ( e , y ) )","if e is to the left of every dodecahedron, then it is not a dodecahedron",Reference,2,True,72
+"@ x ( Cube ( x ) $ @ y ( Dodec ( y ) $ ( SameSize ( y , x ) | Larger ( y , x ) ) ) )",every dodecahedron is as large as every cube,Reference,3,False,44
+"@ x @ y @ z ( ( BackOf ( z , y ) $ Larger ( z , y ) ) & ( BackOf ( y , x ) $ Larger ( y , x ) ) )","for all x , for all y , for all z , if z is in back of y , then z is larger than y and if y is in back of x , then y is larger than x",Baseline,1,False,133
+"@ z ( ( Dodec ( z ) & @ y ~ RightOf ( y , z ) ) $ / u LeftOf ( u , z ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ x @ y ( BackOf ( y , x ) $ Larger ( y , x ) ) & @ y @ z ( BackOf ( z , y ) $ Larger ( z , y ) )","the further back something is, the larger it is",Reference,0,True,47
+/ u ~ ( Dodec ( u ) $ Large ( u ) ),it is not the case that every dodecahedron is large,LoLa,3,True,51
+/ w ~ ( Large ( w ) & Dodec ( w ) ),there is an element w such that it is not the case that w is large and w is a dodecahedron,Baseline,1,False,90
+"@ x ~ ( Tet ( x ) & / y ( Cube ( y ) & SameSize ( x , y ) ) )","for all x , it is not the case that x is a tetrahedron and x is of the same size as some cube",Ranta,1,True,93
+~ Cube ( e ) $ ( ~ Large ( b ) $ Large ( d ) ),"if e isn't a cube, either b or d is large.",Reference,3,False,42
+@ w ( Dodec ( w ) $ ( Medium ( w ) | Large ( w ) ) ),all dodecahedra are not small,Reference,3,False,29
+"@ y @ z ( ( Tet ( y ) & Dodec ( z ) ) $ FrontOf ( y , z ) )","for all y , for all dodecahedrons z , y is not a tetrahedron or y is in front of z",LoLa,2,False,82
+~ ( ~ Cube ( a ) & ~ Cube ( c ) & ~ Cube ( e ) ),it is not the case that it is not the case that a is a cube and it is not the case that c is a cube and it is not the case that e is a cube,Baseline,1,False,139
+/ v ~ ( Large ( v ) & Dodec ( v ) ),there is an element v such that it is not the case that v is large and v is a dodecahedron,Baseline,1,False,90
+/ w ~ ( Dodec ( w ) & Large ( w ) ),there is an element w such that it is not the case that w is a dodecahedron and w is large,Baseline,1,False,90
+"/ z ( RightOf ( b , z ) & Large ( z ) & Cube ( z ) )",there is a cube z such that b is to the right of z and z is large,LoLa,2,False,65
+~ / z ( Cube ( z ) & Large ( z ) ),it is not the case that some cube is large,Ranta,3,True,42
+"@ x / y ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ LeftOf ( y , x ) )","for all x , if for all y , y is not to the right of x and x is a dodecahedron , then something is to the left of x",LoLa,2,False,114
+/ x / y / z ( Cube ( x ) & Small ( x ) & Cube ( y ) & Medium ( y ) & Cube ( z ) & Large ( z ) ),there is an element x such that there is an element y such that there is an element z such that x is a cube and x is small and y is a cube and y is medium and z is a cube and z is large,Baseline,0,True,185
+"~ ( BackOf ( c , a ) $ ~ FrontOf ( c , e ) )","it is not the case that if c is in back of a , then it is not the case that c is in front of e",Baseline,1,False,94
+"~ / x FrontOf ( x , b )",it is not the case that there is an element x such that x is in front of b,Baseline,2,True,74
+"@ y ( Cube ( y ) $ ~ ( SameCol ( a , y ) | SameCol ( b , y ) ) )","for all y , if y is a cube , then it is not the case that a is in the same column as y or b is in the same column as y",Baseline,1,False,118
+"@ x @ y @ z ( ( Tet ( x ) & Cube ( y ) ) $ ~ SameSize ( x , y ) )","for all x , for all y , if x is a tetrahedron and y is a cube , then x is not of the same size as y",LoLa,1,True,99
+"~ ( SameCol ( e , c ) | SameCol ( e , d ) ) & ~ SameCol ( e , c ) & ~ SameCol ( e , d )",it is not the case that e is in the same column as c or e is in the same column as d and it is not the case that e is in the same column as c and it is not the case that e is in the same column as d,Baseline,1,False,198
+/ x / x ( Dodec ( x ) & ~ Small ( x ) ),some dodecahedron is not small,Reference,3,False,30
+"Larger ( e , c ) & Larger ( a , c ) & ~ ( Large ( e ) | Large ( a ) )","e is larger than c , a is larger than c and it is not the case that e or a is large",Ranta,2,False,83
+/ u ( ~ Large ( u ) & Dodec ( u ) ),it is not the case that every dodecahedron is large,LoLa,3,True,51
+"@ x / z ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ LeftOf ( z , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ z ( LeftOf ( z , a ) $ / v ~ ( LeftOf ( v , b ) $ Larger ( z , v ) ) )","for all z , if for all v , v is not to the left of b or z is larger than v , then z is not to the left of a",LoLa,2,False,107
+"@ x ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ / y / z LeftOf ( y , x ) )","for all x , if x is a dodecahedron and it is not the case that there is an element y such that y is to the right of x , then there is an element y such that there is an element z such that y is to the left of x",Baseline,3,True,210
+"@ x ( @ y ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ / z LeftOf ( z , x ) )","for all x , if for all y , x is a dodecahedron and it is not the case that y is to the right of x , then there is an element z such that z is to the left of x",Baseline,1,False,158
+"@ x / y ( ~ Tet ( x ) $ FrontOf ( y , x ) )","for all x , x is a tetrahedron or something is in front of x",LoLa,0,True,60
+"~ / x @ y ( ( LeftOf ( y , b ) $ Larger ( x , y ) ) & LeftOf ( x , a ) )","for all x , if for all y , if y is to the left of b , then x is larger than y , then x is not to the left of a",LoLa,2,False,110
+@ y ( Large ( y ) $ ~ Cube ( y ) ),no cube is large,Reference,3,False,16
+"@ x / y ( ( Cube ( x ) $ ( RightOf ( y , x ) & Tet ( y ) ) ) & SameRow ( x , y ) )",every cube has a tetrahedron that is to its right but is neither in front of or in back of it,Reference,3,False,93
+"@ x @ y ( ( LeftOf ( x , a ) & LeftOf ( y , b ) ) $ / z ( LeftOf ( z , b ) & ~ Larger ( x , z ) ) )","for all x , for all y , if x is to the left of a and y is to the left of b , then there is an element z such that z is to the left of b and it is not the case that x is larger than z",Baseline,1,False,182
+"@ x / y ( ( Cube ( x ) & Small ( x ) ) $ ( Large ( y ) & Cube ( y ) & BackOf ( x , y ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+~ ~ Tet ( c ) | Cube ( b ),it is not the case that it is not the case that c is a tetrahedron or b is a cube,Baseline,1,False,81
+"@ x ( ( Cube ( x ) & / y FrontOf ( y , x ) ) $ Small ( x ) )","for all cubes x , nothing is in front of x or x is small",LoLa,2,False,56
+/ x ( Cube ( x ) | Tet ( x ) ) & @ x ( Cube ( x ) | Tet ( x ) ),there are only cubes and tetrahedra,Reference,3,False,35
+@ u ( Dodec ( u ) $ ~ Small ( u ) ),"for all dodecahedrons u , u is not small",Ranta,2,False,40
+"@ x ( ~ SameCol ( a , x ) $ ( SameCol ( b , x ) | SameCol ( c , x ) ) )","a , c or b is in the same column as everything",LoLa,2,False,46
+"@ x @ y ( ( Tet ( x ) & Cube ( y ) ) $ ( SameSize ( x , y ) $ ~ Tet ( x ) ) )","for all x , for all y , if x is a tetrahedron and y is a cube , then if x is of the same size as y , then it is not the case that x is a tetrahedron",Baseline,1,False,148
+/ u ( ~ Even ( u ) & Prime ( u ) ),it is not the case that every prime is even,LoLa,3,True,43
+"/ x @ y ( Cube ( x ) & Large ( x ) & Dodec ( y ) & ~ BackOf ( y , x ) )","there is an element x such that for all y , x is a cube , x is large , y is a dodecahedron and y is not in back of x",Ranta,0,True,116
+@ x ( Cube ( x ) $ ~ Medium ( x ) ),"for all x , if x is a cube , then it is not the case that x is medium",Baseline,1,False,69
+"FrontOf ( e , d ) | ( Large ( e ) & Tet ( e ) & ~ FrontOf ( e , d ) )","e is in front of d unless it (i.e., e) is a large tetrahedron",Reference,2,True,61
+"@ z @ u ( Dodec ( z ) $ ~ BackOf ( u , z ) )",nothing is in back of some dodecahedron,LoLa,0,True,39
+"/ x / y ( ( Small ( x ) & Dodec ( x ) & FrontOf ( x , y ) ) | ~ FrontOf ( x , y ) )",either there is a small tetrahedron behind a small cube or there isn't,Reference,0,True,70
+( Large ( a ) & Large ( e ) ) | ( ~ Large ( a ) & ~ Large ( e ) ),a is large and e is large or it is not the case that a is large and it is not the case that e is large,Baseline,1,False,102
+( Medium ( c ) $ ~ Cube ( d ) ) & ( Medium ( c ) $ ~ Cube ( e ) ) & ( Medium ( c ) $ ~ Cube ( f ) ),"if c is medium , then it is not the case that d is a cube and if c is medium , then it is not the case that e is a cube and if c is medium , then it is not the case that f is a cube",Baseline,1,False,181
+/ y ~ ( Dodec ( y ) $ Large ( y ) ),some dodecahedron is not large,Reference,3,False,30
+"@ x ( ( Cube ( x ) & @ y ( FrontOf ( x , y ) | ~ Tet ( y ) ) ) $ Large ( x ) )","for all x , if x is a cube and for all y , x is in front of y or y is not a tetrahedron , then x is large",Ranta,2,False,105
+/ y / z ( Cube ( y ) & Cube ( z ) & @ x ( Cube ( x ) | Tet ( x ) ) ),"there is an element z such that there is a cube y such that z is a cube and for all x , x is a tetrahedron or x is a cube",LoLa,1,True,121
+"@ x ( Cube ( x ) $ / y ( LeftOf ( x , y ) & SameSize ( x , y ) & Tet ( y ) ) )","for all cubes x , there is a tetrahedron y such that x is to the left of y and of the same size as y",LoLa,2,False,100
+"@ x ( ( Cube ( x ) $ FrontOf ( x , e ) ) | BackOf ( x , e ) )",every cube is either in front of or in back of e,Reference,3,False,48
+"@ x / y ( Cube ( x ) $ ( LeftOf ( x , y ) & SameRow ( x , y ) & Tet ( y ) ) )",every cube has a tetrahedron that is to its right but is neither in front of or in back of it,Reference,3,False,93
+"@ x ( ( Dodec ( x ) & ~ / z RightOf ( z , x ) ) $ / z LeftOf ( z , x ) )","for all x , if x is a dodecahedron and it is not the case that there is an element z such that z is to the right of x , then there is an element z such that z is to the left of x",Baseline,3,True,178
+"@ x ( / y ( Cube ( x ) & BackOf ( y , x ) ) $ ( Cube ( x ) & Small ( x ) ) )",every cube with something in back of it is small,Reference,3,False,48
+"@ x ( Dodec ( x ) $ / v ( Tet ( v ) & Smaller ( x , v ) ) )",every dodecahedron is smaller than some tetrahedron,Reference,3,False,51
+"@ x @ y ( ( Cube ( x ) & ( ~ Cube ( y ) | Cube ( y ) ) & BackOf ( y , x ) ) $ Small ( x ) )",every cube with something in back of it is small,Reference,3,False,48
+"Larger ( f , c ) & BackOf ( f , c )",f is larger than c and in back of c,Ranta,2,False,35
+"~ / x ( Dodec ( x ) & / y ( Cube ( y ) & LeftOf ( x , y ) & ~ Large ( x ) ) )","for all dodecahedrons x , there is no element y such that y is a cube , x is to the left of y and x is not large",LoLa,2,False,112
+"@ y ( Cube ( y ) $ ( ~ SameCol ( y , a ) & ~ SameCol ( b , y ) ) )","for all y , if y is a cube , then it is not the case that y is in the same column as a and it is not the case that b is in the same column as y",Baseline,1,False,143
+"@ x ( LeftOf ( e , x ) & Dodec ( x ) ) $ ~ Dodec ( e )","if for all x , e is to the left of x and x is a dodecahedron , then it is not the case that e is a dodecahedron",Baseline,1,False,111
+"@ y @ z ( ( Cube ( y ) & Dodec ( z ) & BackOf ( y , z ) ) $ Smaller ( y , z ) )",every cube in back of a dodecahedron is also smaller than it,Reference,3,False,60
+"@ y ( Cube ( y ) $ / x ( Tet ( x ) & SameSize ( y , x ) & RightOf ( x , y ) ) )","for all cubes y , there is a tetrahedron x such that y is of the same size as x and x is to the right of y",LoLa,2,False,106
+"@ x ~ / y ( BackOf ( y , x ) & ~ Larger ( y , x ) )","for all x , it is not the case that there is an element y such that y is in back of x and it is not the case that y is larger than x",Baseline,1,False,132
+"@ x ( ~ Small ( x ) $ ~ ( Cube ( x ) & / y BackOf ( y , x ) ) )","for all cubes x , nothing is in back of x or x is small",LoLa,2,False,55
+@ u ~ ( Dodec ( u ) & Small ( u ) ),"for all u , it is not the case that u is a dodecahedron and u is small",Baseline,1,False,70
+"/ y ( Cube ( y ) & ~ @ x ( Tet ( x ) $ Larger ( x , y ) ) )","there is an element y such that y is a cube and it is not the case that for all x , if x is a tetrahedron , then x is larger than y",Baseline,1,False,131
+"~ Smaller ( d , e ) & ~ Larger ( d , e )",e is neither larger than nor smaller than d,Reference,0,True,43
+"@ x ( Cube ( x ) $ ( Cube ( x ) $ ( ~ SameCol ( x , a ) & ~ SameCol ( x , b ) ) ) )","for all x , if x is a cube , then if x is a cube , then it is not the case that x is in the same column as a and it is not the case that x is in the same column as b",Baseline,1,False,165
+"/ x / y / z ( Tet ( x ) & Tet ( y ) & Tet ( z ) & FrontOf ( y , x ) & BackOf ( z , x ) )",express the fact that at least one of the tetrahedra is between two other tetrahedra,Reference,0,True,84
+~ @ y ( Dodec ( y ) & Large ( y ) ),"it is not the case that for all y , y is a dodecahedron and y is large",Baseline,1,False,70
+"@ x ( ~ Adjoins ( a , x ) & ~ Adjoins ( a , b ) & ~ Adjoins ( a , c ) )",a does not adjoin anything,Reference,0,True,26
+"@ x ( / z ( Cube ( z ) & Smaller ( z , a ) ) $ ( Tet ( x ) $ Smaller ( a , x ) ) )","for all x , if there is an element z such that z is a cube and z is smaller than a , then if x is a tetrahedron , then a is smaller than x",Baseline,2,True,138
+"@ x @ y ( Cube ( x ) $ @ y ( Tet ( y ) $ LeftOf ( x , y ) ) )","for all x , for all y , if x is a cube , then for all y , if y is a tetrahedron , then x is to the left of y",Baseline,0,True,108
+"/ z ( Cube ( z ) & Large ( z ) & @ x ( ( Cube ( x ) & Small ( x ) ) $ BackOf ( x , z ) ) )","there is an element z such that z is a cube , z is large and every small cube is in back of z",LoLa,3,True,93
+"/ y ( Cube ( y ) & Large ( y ) & BackOf ( y , c ) & LeftOf ( y , b ) )",there is an element y such that y is a cube and y is large and y is in back of c and y is to the left of b,Baseline,1,False,106
+"@ x / z ( ( Dodec ( x ) & @ y ~ RightOf ( y , x ) ) $ LeftOf ( z , x ) )","for all x , there is an element z such that if x is a dodecahedron and for all y , it is not the case that y is to the right of x , then z is to the left of x",Baseline,1,False,158
+"@ x ( Tet ( x ) $ @ y ( SameSize ( x , y ) $ ~ Cube ( y ) ) )","for all tetrahedrons x , for all y , if x is of the same size as y , then y is not a cube",Ranta,2,False,89
+"@ u ( Dodec ( u ) $ / y ( Tet ( y ) & Smaller ( u , y ) ) )","for all u , if u is a dodecahedron , then there is an element y such that y is a tetrahedron and u is smaller than y",Baseline,2,True,116
+@ x @ y ( Cube ( x ) | Tet ( x ) ),everything is either a cube or a tetrahedron,Reference,0,True,44
+"@ y ( ~ / x FrontOf ( x , y ) $ Large ( y ) )","for all y , y is large or something is in front of y",LoLa,0,True,52
+"~ SameCol ( e , c ) & ~ SameCol ( e , c ) & ~ SameCol ( e , d )",e is not in the same column as either c or d,Reference,0,True,44
+"/ x / y ( Cube ( x ) & Large ( x ) & RightOf ( b , x ) )",b is to the right of a large cube,Reference,0,True,33
+"BackOf ( e , b ) & BackOf ( d , b ) & BackOf ( e , b ) & BackOf ( d , b )",e and d are in back of b,LoLa,0,True,24
+"@ x ( Dodec ( x ) & LeftOf ( e , x ) ) $ ~ Dodec ( e )","if for all x , x is a dodecahedron and e is to the left of x , then it is not the case that e is a dodecahedron",Baseline,1,False,111
+/ v ( Dodec ( v ) & ~ Large ( v ) ),it is not the case that every dodecahedron is large,LoLa,3,True,51
+~ / x ( ~ Cube ( x ) & ~ Tet ( x ) ),everything is either a cube or a tetrahedron,Reference,0,True,44
+"~ / x ( ( ~ LeftOf ( x , b ) & LeftOf ( x , a ) ) | ( LeftOf ( x , b ) & ~ LeftOf ( x , a ) ) )",the same things are left of a as are left of b,Reference,3,False,46
+"@ x ( / y ( Cube ( y ) & RightOf ( x , y ) & Large ( y ) ) $ Small ( x ) )","for all x , if there is an element y such that y is a cube and x is to the right of y and y is large , then x is small",Baseline,0,True,118
+"@ x ( Tet ( x ) $ @ y ( ( Cube ( y ) & Smaller ( y , a ) ) $ Larger ( x , a ) ) )","for all x , if x is a tetrahedron , then for all y , if y is a cube and y is smaller than a , then x is larger than a",Baseline,2,True,117
+"~ ( FrontOf ( d , b ) | FrontOf ( d , c ) ) & ~ ( FrontOf ( c , b ) | FrontOf ( c , c ) )",it is not the case that d is in front of b or in front of c and it is not the case that c is in front of b or c is in front of itself,Ranta,1,True,133
+"@ x / y ( Cube ( x ) $ ( RightOf ( y , x ) & Tet ( y ) & SameRow ( y , x ) ) )",every cube has a tetrahedron that is to its right but is neither in front of or in back of it,Reference,3,False,93
+"@ x @ y ( ~ / x FrontOf ( x , y ) $ Large ( y ) )","for all y , something is in front of y or y is large",LoLa,0,True,52
+"~ / y ( Tet ( y ) & / z ( Cube ( z ) & SameSize ( y , z ) ) )",it is not the case that some tetrahedron is of the same size as some cube,Ranta,3,True,73
+"/ y ~ Adjoins ( a , y )",it is not the case that a is adjacent to everything,LoLa,1,True,51
+@ x ( Dodec ( x ) $ ( Small ( x ) | Medium ( x ) | Dodec ( x ) ) ),"for all dodecahedrons x , x is small , x is medium or x is a dodecahedron",Ranta,2,False,73
+"@ x ~ ( RightOf ( a , x ) & Cube ( x ) )","for all cubes x , a is not to the right of x",LoLa,2,False,44
+"@ x @ y ( ( Dodec ( y ) & FrontOf ( y , x ) & Cube ( x ) ) $ Smaller ( x , y ) )","for all x , for all y , if y is a dodecahedron and y is in front of x and x is a cube , then x is smaller than y",Baseline,2,True,112
+/ x / y ( Cube ( x ) & Tet ( y ) & ~ / z Dodec ( z ) ),there are only cubes and tetrahedra,Reference,3,False,35
+"@ x ( ( Dodec ( x ) & LeftOf ( e , x ) ) $ ~ @ y Dodec ( y ) )","if e is to the left of every dodecahedron, then it is not a dodecahedron",Reference,2,True,72
+"@ x ~ / y ( FrontOf ( y , x ) & ~ Smaller ( y , x ) )","the further back a thing is, the larger it is",Reference,0,True,45
+"@ y @ x ( ( Cube ( x ) & Tet ( y ) ) $ ~ SameSize ( x , y ) )","for all y , for all x , if x is a cube and y is a tetrahedron , then x is not of the same size as y",Ranta,1,True,99
+"@ x @ y ( RightOf ( y , x ) $ ~ Cube ( y ) )","for all x , for all y , if y is to the right of x , then it is not the case that y is a cube",Baseline,1,False,92
+"/ x ( Cube ( x ) & Large ( x ) & / z ( FrontOf ( x , z ) & Small ( z ) & Cube ( z ) ) )","there is an element x such that x is a cube , x is large and there is an element z such that x is in front of z , z is small and z is a cube",Ranta,2,False,140
+/ x ( ( Tet ( x ) & Small ( x ) ) | ~ / x ( Tet ( x ) & Small ( x ) ) ),"if some tetrahedron is small , then some tetrahedron is small",LoLa,3,True,61
+"~ ( Larger ( e , c ) & Smaller ( c , e ) ) & ~ ( Larger ( d , c ) & Smaller ( c , d ) )",neither e nor d is larger than c,Reference,2,True,32
+"@ y ( Dodec ( y ) $ ~ / z BackOf ( z , y ) )",no dodecahedron has anything in back of it,Reference,0,True,42
+"@ u ( ( Cube ( u ) $ FrontOf ( u , e ) ) | ( Cube ( u ) $ BackOf ( u , e ) ) )",every cube is either in front of or in back of e,Reference,3,False,48
+~ @ x ( Large ( x ) & Dodec ( x ) ),it is not the case that everything is large and everything is a dodecahedron,LoLa,3,True,76
+/ u ( ~ Small ( u ) & Dodec ( u ) ),it is not the case that every dodecahedron is small,LoLa,3,True,51
+"@ x ( ~ Large ( x ) $ / y BackOf ( x , y ) )",only large objects have nothing in front of them,Reference,0,True,48
+"@ x ( Cube ( x ) $ ( BackOf ( x , a ) | FrontOf ( x , b ) ) )","for all x , if x is a cube , then x is in back of a or x is in front of b",Baseline,2,True,73
+~ ( Cube ( a ) | Cube ( e ) ) $ Cube ( c ),"if it is not the case that a is a cube or e is a cube , then c is a cube",Baseline,1,False,72
+"@ x @ y ( ( Cube ( x ) & Cube ( y ) ) $ ( ~ RightOf ( x , y ) & ~ LeftOf ( x , y ) ) )","for all x , for all y , if x is a cube and y is a cube , then it is not the case that x is to the right of y and it is not the case that x is to the left of y",Baseline,1,False,158
+"~ / x / y ( LeftOf ( x , a ) & LeftOf ( y , b ) & Smaller ( x , y ) )",nothing to the left of a is smaller than anything to the left of b,Reference,0,True,66
+"~ ( FrontOf ( d , b ) | FrontOf ( c , b ) ) & ~ FrontOf ( d , c )",it is not the case that d is in front of b or c is in front of b and it is not the case that d is in front of c,Baseline,1,False,111
+"@ x ( @ y ( ~ RightOf ( y , x ) & Dodec ( x ) ) $ / z LeftOf ( z , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"/ u ( LeftOf ( u , b ) & Cube ( u ) & Large ( u ) )",there is an element u such that u is to the left of b and u is a cube and u is large,Baseline,0,True,84
+~ ( ~ Student ( max ) | Pet ( max ) ),"max is a student, not a pet",Reference,0,True,27
+"~ ( FrontOf ( d , c ) | FrontOf ( c , c ) ) & ~ ( FrontOf ( c , b ) | FrontOf ( d , b ) )",it is not the case that d is in front of c or c is in front of c and it is not the case that c is in front of b or d is in front of b,Baseline,1,False,133
+"@ x ( / z / y ( Cube ( z ) & Cube ( y ) & BackOf ( x , y ) & FrontOf ( x , z ) ) $ ~ Large ( x ) )","for all x , for all z , for all y , if z is a cube , y is a cube , x is in back of y and x is in front of z , then x is not large",LoLa,2,False,129
+@ z ~ ( Large ( z ) & Tet ( z ) ),"for all tetrahedrons z , z is not large",LoLa,2,False,39
+"/ x / y ( Cube ( x ) & @ y ( Tet ( y ) $ FrontOf ( x , y ) ) )",some cube is in front of every tetrahedron,Reference,3,False,42
+"Dodec ( b ) $ ( ~ FrontOf ( b , d ) $ ~ BackOf ( b , d ) )","b is not a dodecahedron , b is in front of d or b is not in back of d",LoLa,2,False,69
+"SameRow ( d , b )",d is in the same row as b,Baseline,0,True,25
+@ x ( ~ Tet ( x ) | ~ Large ( x ) ),no tetrahedron is large,Reference,3,False,23
+"/ x / y ( ( Cube ( x ) & Small ( x ) & Tet ( y ) & Small ( y ) ) $ BackOf ( y , x ) )","there is an element x such that if for all y , x is a cube , x is small , y is a tetrahedron and y is small , then something is in back of x",LoLa,0,True,140
+"/ x ( Cube ( x ) & Larger ( a , x ) ) $ ~ / y ( Tet ( y ) & ~ Smaller ( a , y ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"@ x ( ( LeftOf ( e , x ) & Dodec ( x ) ) $ ~ @ y Dodec ( y ) )","if e is to the left of every dodecahedron, then it is not a dodecahedron",Reference,2,True,72
+~ ( Tet ( c ) & Tet ( a ) ),c is not a tetrahedron or a is not a tetrahedron,LoLa,0,True,48
+"( ~ FrontOf ( e , d ) $ ( Tet ( e ) & Large ( e ) ) ) | FrontOf ( e , d )",at least one of these holds : \item e is in front of d \item e is a tetrahedron and e is large,LoLa,2,False,94
+"@ x ~ ( Tet ( x ) & / y ( Cube ( y ) & SameSize ( x , y ) ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+/ x ( Dodec ( x ) & ~ Large ( x ) & ~ Small ( x ) ),some dodecahedron is neither large nor small,Reference,3,False,44
+"~ / z ( Cube ( z ) & / x RightOf ( z , x ) )",no cube is to the right of anything,Reference,3,False,35
+/ u ( Prime ( u ) & Even ( u ) ),there is an element u such that u is a prime and u is even,Baseline,0,True,58
+~ / w ( Large ( w ) & Dodec ( w ) ),"for all dodecahedrons w , w is not large",LoLa,2,False,40
+"~ / x / y / z ( BackOf ( x , y ) & Cube ( y ) & FrontOf ( x , z ) & Cube ( z ) & Large ( x ) )",nothing in back of a cube and in front of a cube is large,Reference,0,True,57
+"@ x ( Cube ( x ) $ ( ~ SameCol ( x , a ) & ~ SameCol ( b , x ) ) )","for all x , if x is a cube , then it is not the case that x is in the same column as a and it is not the case that b is in the same column as x",Baseline,1,False,143
+/ x ~ ( Even ( x ) | ~ Prime ( x ) ),it is not the case that every prime is even,LoLa,3,True,43
+/ y ~ ( Dodec ( y ) $ ( Small ( y ) | Large ( y ) ) ),some dodecahedron is neither large nor small,Reference,3,False,44
+"( ~ RightOf ( a , c ) | ~ LeftOf ( a , b ) ) & ( ~ LeftOf ( e , b ) | ~ RightOf ( e , c ) )",it is not the case that a is to the right of c or it is not the case that a is to the left of b and it is not the case that e is to the left of b or it is not the case that e is to the right of c,Baseline,1,False,195
+"@ x / y ( Cube ( x ) $ ( RightOf ( y , x ) & Tet ( y ) & SameSize ( y , x ) ) )","for all cubes x , some tetrahedron is of the same size as x and to the right of x",LoLa,2,False,81
+/ y / z ( Cube ( y ) & Cube ( z ) & @ x ( Cube ( x ) | Tet ( x ) ) ),"there is an element y such that there is an element z such that y is a cube and z is a cube and for all x , x is a cube or x is a tetrahedron",Baseline,1,False,141
+"@ z ( Cube ( z ) $ ( LeftOf ( z , b ) & RightOf ( z , a ) ) )",every cube is to the right of a and to the left of b,Reference,3,False,52
+"~ @ z ( Cube ( z ) $ @ y ( Tet ( y ) $ Smaller ( z , y ) ) )",not every cube is smaller than every tetrahedra,Reference,3,False,47
+"/ x ( Cube ( x ) & @ x ( Cube ( x ) $ ~ LeftOf ( b , x ) ) )","there is an element x such that x is a cube and for all x , if x is a cube , then it is not the case that b is to the left of x",Baseline,1,False,127
+( Large ( a ) $ Cube ( a ) ) & ( Cube ( a ) $ Large ( a ) ),"all these hold : \item if a is large , then a is a cube \item if a is a cube , then a is large",Ranta,0,True,94
+"~ ( LeftOf ( b , e ) & RightOf ( b , c ) ) $ ~ RightOf ( c , d )","if it is not the case that b is to the left of e and to the right of c , then c is not to the right of d",Ranta,1,True,104
+"@ x ( ( Cube ( x ) & ~ SameCol ( x , a ) & ~ SameCol ( x , b ) ) | ~ Cube ( x ) )","for all x , at least one of these holds : \item x is a cube , x is not in the same column as a and x is not in the same column as b \item x is not a cube",Ranta,0,True,153
+"@ v / w ( ( Cube ( v ) & Small ( v ) ) $ BackOf ( v , w ) )","for all cubes v , v is not small or v is in back of something",LoLa,2,False,61
+"/ x ( Cube ( x ) & Large ( x ) & LeftOf ( x , b ) & LeftOf ( x , b ) & BackOf ( x , c ) )",there is an element x such that x is a cube and x is large and x is to the left of b and x is to the left of b and x is in back of c,Baseline,1,False,132
+"@ x @ y ( Tet ( x ) $ ( SameSize ( x , y ) $ ~ Cube ( y ) ) )","for all x , for all y , if x is a tetrahedron , then if x is of the same size as y , then it is not the case that y is a cube",Baseline,1,False,125
+"@ x ( ( Dodec ( x ) & ~ / y RightOf ( x , y ) ) $ ( Dodec ( x ) & / y LeftOf ( x , y ) ) )","for all dodecahedrons x , if x is to the right of nothing , then x is a dodecahedron and x is to the left of something",LoLa,2,False,118
+"~ @ x ~ ( Large ( x ) & Cube ( x ) & LeftOf ( x , b ) )",b has a large cube to its left,Reference,0,True,30
+"@ y ( ( Cube ( y ) & Small ( y ) ) $ RightOf ( y , a ) )",every small cube is to the right of a,LoLa,3,True,37
+/ x ( ~ Small ( x ) & ~ Large ( x ) & Dodec ( x ) ),some dodecahedron is neither large nor small,Reference,3,False,44
+"@ x ( ( Cube ( x ) & ~ / y ( Tet ( y ) & ~ FrontOf ( x , y ) ) ) $ Large ( x ) )","for all x , if x is in front of every tetrahedron and x is a cube , then x is large",LoLa,3,True,83
+@ y ~ ( Large ( y ) & Tet ( y ) ),"for all y , it is not the case that y is large and y is a tetrahedron",Baseline,1,False,69
+"@ x @ y ( ( Cube ( y ) & Larger ( a , y ) & Tet ( x ) ) $ Smaller ( a , x ) )","for all x , if a is larger than some cube , then x is not a tetrahedron or a is smaller than x",LoLa,2,False,94
+"~ Tet ( a ) | FrontOf ( a , d )",it is not the case that a is a tetrahedron or a is in front of d,Baseline,1,False,64
+"( Tet ( a ) & FrontOf ( a , b ) ) | ~ Tet ( a )",a is a tetrahedron only if it is in front of b,Reference,0,True,46
+"@ x ( ( Dodec ( x ) & / y ( Cube ( y ) & LeftOf ( x , y ) ) ) $ Large ( x ) )","for all x , if x is a dodecahedron and there is an element y such that y is a cube and x is to the left of y , then x is large",Baseline,0,True,126
+"Small ( c ) $ LeftOf ( a , c )","if c is small , then a is to the left of c",Baseline,0,True,42
+"~ FrontOf ( c , c ) & ~ FrontOf ( d , c ) & ~ FrontOf ( d , b ) & ~ FrontOf ( c , b )","c is not in front of itself , d is not in front of c , d is not in front of b and c is not in front of b",LoLa,0,True,104
+"~ ~ ( ~ Larger ( e , d ) & ~ Smaller ( e , d ) )",it is not the case that it is not the case that e is not larger than d and e is not smaller than d,Ranta,1,True,98
+"@ x / y ( ( Cube ( x ) & Small ( x ) ) $ ( Large ( y ) & Cube ( y ) & BackOf ( x , y ) ) )","for all x , there is an element y such that if x is a cube and x is small , then y is large and y is a cube and x is in back of y",Baseline,0,True,129
+/ x / y ( Cube ( x ) & Tet ( y ) & ~ / z ~ ( Cube ( z ) | Tet ( z ) ) ),"there is an element x such that there is an element y such that x is a cube , y is a tetrahedron and it is not the case that there is an element z such that it is not the case that z is a cube or z is a tetrahedron",Ranta,1,True,214
+"/ x ( Large ( x ) & Large ( x ) & Cube ( x ) & RightOf ( b , x ) )",b is to the right of a large cube,Reference,0,True,33
+"/ x ( Large ( x ) & Cube ( x ) & LeftOf ( x , b ) & BackOf ( x , c ) )",a large cube to the left of b is in back of c,Reference,0,True,45
+"/ x ( Cube ( x ) & Large ( x ) & / y LeftOf ( x , b ) )",there is an element x such that x is a cube and x is large and there is an element y such that x is to the left of b,Baseline,0,True,116
+~ / x Dodec ( x ) & / y Cube ( y ) & / z Tet ( z ),"nothing is a dodecahedron , something is a cube and something is a tetrahedron",LoLa,0,True,78
+"@ x ( Cube ( x ) $ ( ~ SameCol ( x , b ) & ~ SameCol ( a , x ) ) )","for all cubes x , x is not in the same column as b and a is not in the same column as x",Ranta,2,False,87
+"@ x ( ( Cube ( x ) & Larger ( a , x ) ) $ @ v ( Tet ( v ) $ Smaller ( a , v ) ) )","if a is larger than some cube , then a is smaller than every tetrahedron",LoLa,3,True,72
+"@ x ~ ( Tet ( x ) & / y ( SameSize ( x , y ) & Cube ( y ) ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+"@ x ( Cube ( x ) $ @ y ( Dodec ( y ) $ ( SameSize ( x , y ) | Smaller ( x , y ) ) ) )","for all x , if x is a cube , then for all y , if y is a dodecahedron , then x is of the same size as y or x is smaller than y",Baseline,2,True,125
+"@ z ( ( Cube ( z ) & Larger ( a , z ) ) $ @ u ( Tet ( u ) $ Larger ( u , a ) ) )","for all z , if z is a cube and a is larger than z , then for all u , if u is a tetrahedron , then u is larger than a",Baseline,2,True,116
+"@ y ~ / x ( Cube ( x ) & RightOf ( x , y ) )",no cube is to the right of anything,Reference,3,False,35
+@ z ( Dodec ( z ) $ ( Small ( z ) | Medium ( z ) | Large ( z ) ) ),"for all z , if z is a dodecahedron , then z is small or z is medium or z is large",Baseline,1,False,81
+"~ SameCol ( d , e ) & ~ SameCol ( c , e )",d is not in the same column as e and c is not in the same column as e,Ranta,0,True,69
+"@ x ( Cube ( x ) $ ( FrontOf ( e , x ) | FrontOf ( x , e ) ) )","for all x , if x is a cube , then e is in front of x or x is in front of e",Baseline,2,True,74
+"@ x / y ( LeftOf ( x , a ) $ ~ ( LeftOf ( y , b ) $ Larger ( x , y ) ) )","for all x , if for all y , y is not to the left of b or x is larger than y , then x is not to the left of a",LoLa,2,False,107
+~ / x ~ ( ~ Even ( x ) | ~ Prime ( x ) ),it is not the case that there is an element x such that it is not the case that x is not even or x is not a prime,Ranta,1,True,113
+"@ y ( Dodec ( y ) $ @ x ( Cube ( x ) $ ( LeftOf ( y , x ) $ Large ( y ) ) ) )","for all dodecahedrons y , for all cubes x , if y is to the left of x , then y is large",Ranta,2,False,86
+"~ / x / z ( Tet ( x ) & Cube ( z ) & SameSize ( x , z ) )",it is not the case that there is an element x such that there is an element z such that x is a tetrahedron and z is a cube and x is of the same size as z,Baseline,1,False,153
+"Dodec ( b ) $ ~ ( FrontOf ( d , b ) & ~ BackOf ( d , b ) )","b is not a dodecahedron , d is not in front of b or d is in back of b",LoLa,0,True,69
+"@ x ( ( Dodec ( x ) & @ y ~ RightOf ( y , x ) ) $ / z RightOf ( x , z ) )","for all x , if x is a dodecahedron and for all y , it is not the case that y is to the right of x , then there is an element z such that x is to the right of z",Baseline,1,False,159
+"@ x ( Cube ( x ) $ ~ ( SameCol ( x , a ) | SameCol ( b , x ) ) )","for all cubes x , x is not in the same column as a and b is not in the same column as x",LoLa,2,False,87
+"@ x ~ ( Tet ( x ) & / z ( Cube ( z ) & SameSize ( x , z ) ) )","for all x , it is not the case that x is a tetrahedron and x is of the same size as some cube",Ranta,1,True,93
+@ v ( Dodec ( v ) $ ( Small ( v ) | Medium ( v ) | Large ( v ) ) ),"every dodecahedron is small , medium or large",Ranta,3,True,45
+"@ x / y / z ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ ( Dodec ( x ) & LeftOf ( z , x ) ) )","for all x , there is an element y such that there is an element z such that if x is a dodecahedron and it is not the case that y is to the right of x , then x is a dodecahedron and z is to the left of x",Baseline,1,False,202
+~ @ u ( ~ Dodec ( u ) | ~ Small ( u ) ),"it is not the case that for all u , it is not the case that u is a dodecahedron or it is not the case that u is small",Baseline,1,False,117
+"@ x ( ( Dodec ( x ) $ / y LeftOf ( x , y ) ) | Small ( x ) )",every dodecahedron with nothing to its right is small,Reference,3,False,53
+"@ x @ y ( RightOf ( x , y ) $ ~ Cube ( x ) )",every cube is to the right of nothing,LoLa,3,True,37
+"@ y ( ( Dodec ( y ) & ~ / u RightOf ( u , y ) ) $ / z LeftOf ( z , y ) )","for all y , if y is a dodecahedron and it is not the case that there is an element u such that u is to the right of y , then there is an element z such that z is to the left of y",Baseline,3,True,178
+"@ z / x ( ~ FrontOf ( x , z ) $ Tet ( z ) )",all objects with nothing in front of them are tetrahedra,Reference,3,False,56
+"@ z / y ( Dodec ( z ) $ ( Cube ( y ) & SameSize ( z , y ) ) )",every dodecahedron is of the same size as some cube,LoLa,3,True,51
+"@ y @ x ( ( Cube ( y ) & Cube ( x ) ) $ ~ RightOf ( x , y ) )","for all y , for all cubes x , y is not a cube or x is not to the right of y",LoLa,2,False,75
+"@ x ( Cube ( x ) $ / z ( Tet ( z ) & SameSize ( z , x ) & RightOf ( z , x ) ) )","for all x , if x is a cube , then there is an element z such that z is a tetrahedron and z is of the same size as x and z is to the right of x",Baseline,0,True,142
+"@ x ( Cube ( x ) $ / y ( RightOf ( y , x ) & ~ FrontOf ( y , x ) & ~ BackOf ( y , x ) ) )","for all cubes x , there is an element y such that y is to the right of x , y is not in front of x and y is not in back of x",Ranta,2,False,123
+"@ x @ y ( ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) & ( ~ LeftOf ( y , a ) $ ~ LeftOf ( y , b ) ) )","for all x , for all y , all these hold : \item if x is to the left of a , then x is to the left of b \item if y is to the left of b , then y is to the left of a",LoLa,0,True,160
+"@ y ( ( Dodec ( y ) & @ z ~ RightOf ( z , y ) ) $ / x LeftOf ( x , y ) )","for all y , if y is a dodecahedron and for all z , z is not to the right of y , then there is an element x such that x is to the left of y",Ranta,0,True,138
+"@ y ( ( Small ( y ) & Cube ( y ) ) $ / x ( Large ( x ) & Cube ( x ) & BackOf ( y , x ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+"~ FrontOf ( c , b ) & ~ FrontOf ( d , b ) & ~ FrontOf ( d , c ) & ~ FrontOf ( c , c )","c is not in front of b , d is not in front of b , d is not in front of c and c is not in front of itself",LoLa,0,True,104
+"@ x / y ( Cube ( x ) $ ( RightOf ( y , x ) & SameSize ( x , y ) & Tet ( y ) ) )","for all cubes x , there is a tetrahedron y such that y is to the right of x and x is of the same size as y",LoLa,2,False,106
+"/ y ( ( Larger ( a , y ) & Cube ( y ) ) $ @ x ( Tet ( x ) $ Smaller ( y , x ) ) )","there is an element y such that if a is larger than y and y is a cube , then y is smaller than every tetrahedron",Ranta,2,False,112
+"@ z ( ( Cube ( z ) $ FrontOf ( z , e ) ) | ( Cube ( z ) $ BackOf ( z , e ) ) )","for all cubes z , z is in front of e , z is not a cube or z is in back of e",LoLa,2,False,75
+Tet ( d ) $ ~ Tet ( b ),"if d is a tetrahedron , then b is not a tetrahedron",Ranta,0,True,51
+"/ z ( Large ( z ) & Cube ( z ) & @ u ( ( Small ( u ) & Cube ( u ) ) $ BackOf ( u , z ) ) )","there is a cube z such that for all u , if u is small and u is a cube , then u is in back of z and z is large",LoLa,0,True,109
+/ u ( ~ Large ( u ) & Dodec ( u ) ),some dodecahedron is not large,Reference,3,False,30
+Medium ( c ) $ ( ~ Cube ( d ) & ~ ( Cube ( e ) | Cube ( f ) ) ),"if c is medium , then it is not the case that d is a cube and it is not the case that e is a cube or f is a cube",Baseline,1,False,112
+"~ / u ( Cube ( u ) & / y RightOf ( u , y ) )",no cube is to the right of anything,Reference,3,False,35
+( ~ Cube ( b ) $ Tet ( c ) ) | ( ~ Tet ( c ) $ Cube ( b ) ),"if it is not the case that b is a cube , then c is a tetrahedron or if it is not the case that c is a tetrahedron , then b is a cube",Baseline,1,False,132
+"@ x ( LeftOf ( x , a ) $ @ z ( LeftOf ( z , b ) $ ~ Smaller ( x , z ) ) )","for all x , for all z , x is not to the left of a , z is not to the left of b or x is not smaller than z",LoLa,2,False,104
+"@ x @ y ( Tet ( y ) $ ( Cube ( x ) $ ~ SameSize ( x , y ) ) )","for all x , for all tetrahedrons y , if x is a cube , then x is not of the same size as y",Ranta,2,False,89
+~ ( Small ( d ) | Small ( c ) ) & ~ ( ~ Cube ( d ) | ~ Cube ( c ) ),it is not the case that d is small or c is small and it is not the case that it is not the case that d is a cube or it is not the case that c is a cube,Baseline,1,False,151
+"/ z ( Large ( z ) & Cube ( z ) & RightOf ( b , z ) )",b is to the right of a large cube,Reference,0,True,33
+"@ x ~ ~ / y ~ Larger ( x , y )","for all x , it is not the case that it is not the case that there is an element y such that it is not the case that x is larger than y",Baseline,1,False,134
+/ y ( ~ Dodec ( y ) | ~ Large ( y ) ),there is an element y such that it is not the case that y is a dodecahedron or it is not the case that y is large,Baseline,1,False,113
+/ z ~ ( Dodec ( z ) $ ( Small ( z ) | Large ( z ) ) ),"there is an element z such that it is not the case that if z is a dodecahedron , then z is small or large",Ranta,0,True,105
+"~ Dodec ( b ) | ( BackOf ( b , d ) $ FrontOf ( b , d ) )","it is not the case that b is a dodecahedron or if b is in back of d , then b is in front of d",Baseline,1,False,93
+"@ x ( Cube ( x ) $ ~ / y RightOf ( x , y ) )","for all cubes x , it is not the case that there is an element y such that x is to the right of y",Ranta,2,False,96
+"@ x ( ( Cube ( x ) & ~ Small ( x ) ) $ @ y ~ FrontOf ( y , x ) )","for all x , x is small , x is not a cube or nothing is in front of x",LoLa,0,True,68
+"@ x ( Cube ( x ) $ Large ( x ) ) & @ y ( Dodec ( y ) $ ~ BackOf ( y , x ) )","every cube is large and for all dodecahedrons y , y is not in back of x",Ranta,2,False,71
+"@ y ~ ( Cube ( y ) & ( SameCol ( y , a ) | SameCol ( y , b ) ) )","for all cubes y , y is not in the same column as a and y is not in the same column as b",LoLa,2,False,87
+"@ y ( Large ( y ) | / x FrontOf ( x , y ) )","for all y , y is large or there is an element x such that x is in front of y",Baseline,2,True,76
+Medium ( c ) $ ( ~ Cube ( d ) & ~ Cube ( e ) & ~ Cube ( f ) ),"if c is medium , then it is not the case that d is a cube and it is not the case that e is a cube and it is not the case that f is a cube",Baseline,1,False,137
+"@ x ( Dodec ( x ) $ @ z ( Cube ( z ) $ ( Larger ( x , z ) | SameSize ( x , z ) ) ) )","for all x , if x is a dodecahedron , then for all z , if z is a cube , then x is larger than z or x is of the same size as z",Baseline,2,True,124
+@ x @ y ( ( Cube ( x ) | Tet ( x ) ) & ( Cube ( y ) | Tet ( y ) ) ),there are only cubes and tetrahedra,Reference,3,False,35
+"@ x ( Cube ( x ) $ / y ( Tet ( y ) & RightOf ( y , x ) & SameSize ( y , x ) ) )","for all cubes x , some tetrahedron is to the right of x and of the same size as x",LoLa,2,False,81
+/ y ( ~ ( Large ( y ) | Small ( y ) ) & Dodec ( y ) ),there is an element y such that it is not the case that y is large or small and y is a dodecahedron,Ranta,1,True,99
+"@ x / y ( ( Dodec ( x ) & LeftOf ( y , x ) ) $ ~ Dodec ( y ) )","for all x , there is an element y such that if x is a dodecahedron and y is to the left of x , then it is not the case that y is a dodecahedron",Baseline,1,False,143
+"@ x @ y ( ( Cube ( x ) & Larger ( a , x ) & Tet ( y ) ) $ Larger ( y , a ) )","for all x , for all y , if x is a cube and a is larger than x and y is a tetrahedron , then y is larger than a",Baseline,2,True,110
+"~ ( FrontOf ( d , c ) | FrontOf ( d , b ) | FrontOf ( c , b ) )",neither d nor c is in front of either c or b,Reference,3,False,44
+"@ x / y ( ( Large ( x ) & Cube ( x ) ) $ FrontOf ( x , y ) )",every large cube is in front of something,Reference,3,False,41
+"@ x ( @ y ( Dodec ( y ) $ LeftOf ( e , y ) ) $ ~ Dodec ( e ) )","for all x , if e is to the left of every dodecahedron , then e is not a dodecahedron",Ranta,2,False,84
+"/ x ( ( Dodec ( x ) & LeftOf ( e , x ) ) $ ~ Dodec ( x ) )","there is an element x such that if x is a dodecahedron and e is to the left of x , then it is not the case that x is a dodecahedron",Baseline,1,False,131
+"~ / y / x ( Tet ( y ) & SameSize ( y , x ) & Cube ( x ) )",it is not the case that there is an element y such that there is an element x such that y is a tetrahedron and y is of the same size as x and x is a cube,Baseline,3,True,153
+"@ x @ y ( ( Cube ( x ) & Dodec ( y ) ) $ ( LeftOf ( y , x ) $ Large ( y ) ) )","for all x , for all y , if x is a cube and y is a dodecahedron , then if y is to the left of x , then y is large",Baseline,1,False,112
+"~ FrontOf ( c , b ) & ~ FrontOf ( d , b ) & ~ FrontOf ( c , c ) & ~ FrontOf ( d , c )",neither d nor c is in front of either c or b,Reference,3,False,44
+@ x ( Dodec ( x ) $ ( ( Dodec ( x ) & Medium ( x ) ) | ( Dodec ( x ) & Large ( x ) ) ) ),all dodecahedra are not small,Reference,3,False,29
+"@ x ( LeftOf ( x , a ) $ ~ @ z ( LeftOf ( z , b ) $ Larger ( x , z ) ) )","for all x , if for all z , if z is to the left of b , then x is larger than z , then x is not to the left of a",LoLa,2,False,110
+@ z ~ ( Large ( z ) & Tet ( z ) ),"for all z , it is not the case that z is large and z is a tetrahedron",Baseline,1,False,69
+~ / y ( Even ( y ) & Prime ( y ) ),no even number is prime,Reference,3,False,23
+"@ y ( ( Cube ( y ) $ RightOf ( y , a ) ) & ( Cube ( y ) $ LeftOf ( y , b ) ) )",every cube is to the right of a and to the left of b,Reference,3,False,52
+"@ x @ y ( ( Dodec ( x ) & LeftOf ( x , y ) ) $ ( Cube ( y ) $ Large ( x ) ) )","for all x , for all y , if x is a dodecahedron , x is to the left of y and y is a cube , then x is large",LoLa,0,True,104
+"@ x ( Cube ( x ) $ @ y ( BackOf ( y , x ) $ ( Cube ( x ) & Small ( x ) ) ) )","for all x , if x is a cube , then for all y , if y is in back of x , then x is a cube and x is small",Baseline,0,True,100
+Tet ( c ) $ ~ Tet ( a ),"if c is a tetrahedron , then it is not the case that a is a tetrahedron",Baseline,1,False,71
+"@ w ~ Adjoins ( a , w )",a does not adjoin anything,Reference,0,True,26
+"~ ( FrontOf ( d , c ) | FrontOf ( c , c ) | FrontOf ( d , b ) | FrontOf ( c , b ) )","d is not in front of c , c is not in front of itself , d is not in front of b and c is not in front of b",LoLa,0,True,104
+"@ x ( / z / y ( Cube ( z ) & BackOf ( x , z ) & Cube ( y ) & FrontOf ( x , y ) ) $ ~ Large ( x ) )","for all x , if there is an element z such that there is an element y such that z is a cube , x is in back of z , y is a cube and x is in front of y , then x is not large",Ranta,2,False,169
+"@ x ( Cube ( x ) $ / y ( RightOf ( y , x ) & SameRow ( x , y ) ) )","for all cubes x , there is an element y such that y is to the right of x and x is in the same row as y",Ranta,2,False,102
+"Dodec ( b ) $ ~ ( ~ FrontOf ( b , d ) & BackOf ( b , d ) )","b is not a dodecahedron , b is in front of d or b is not in back of d",LoLa,2,False,69
+"~ ~ ( Large ( e ) & Tet ( e ) ) | FrontOf ( e , d )","e is in front of d unless it (i.e., e) is a large tetrahedron",Reference,2,True,61
+@ z ~ ( Cube ( z ) & Large ( z ) ),no cube is large,Reference,3,False,16
+"( Cube ( b ) & Cube ( c ) ) $ ( SameRow ( c , b ) & ~ SameCol ( b , c ) )","if b is a cube and c is a cube , then c is in the same row as b and b is not in the same column as c",Ranta,1,True,100
+"/ x ( @ y ( Dodec ( y ) $ LeftOf ( e , y ) ) $ ~ Dodec ( e ) )","there is an element x such that if e is to the left of every dodecahedron , then e is not a dodecahedron",Ranta,2,False,104
+"~ ( ~ ( Large ( a ) | Large ( e ) ) $ ~ ( Larger ( a , c ) & Larger ( e , c ) ) )","a and e are both larger than c, but neither is large",Reference,0,True,52
+"~ ( ( Larger ( a , c ) & Larger ( e , c ) ) $ ( Large ( a ) | Large ( e ) ) )","a is larger than c , e is larger than c , e is not large and a is not large",LoLa,2,False,75
+"Dodec ( b ) $ ( FrontOf ( b , d ) | ~ BackOf ( b , d ) )","b is not a dodecahedron , b is in front of d or b is not in back of d",LoLa,2,False,69
+"@ z / x ( ( Dodec ( z ) & ~ RightOf ( x , z ) ) $ Small ( z ) )",every dodecahedron with nothing to its right is small,Reference,3,False,53
+"~ @ x ( ~ Cube ( x ) | ~ Large ( x ) | @ y ( ~ Small ( y ) | ~ Cube ( y ) | ~ FrontOf ( x , y ) ) )","it is not the case that for all x , it is not the case that x is a cube or it is not the case that x is large or for all y , it is not the case that y is small or it is not the case that y is a cube or it is not the case that x is in front of y",Baseline,1,False,244
+"@ x @ y ( ( Cube ( x ) & Tet ( y ) ) $ LeftOf ( x , y ) )",there are at most two tetrahedra,Reference,3,False,32
+"SameCol ( e , b ) & SameRow ( d , e ) & SameCol ( a , d )",e is in the same column as b and d is in the same row as e and a is in the same column as d,Baseline,0,True,91
+"/ y / x ( Cube ( x ) & Large ( x ) & Small ( y ) & Cube ( y ) & FrontOf ( x , y ) )",a large cube is in front of a small cube,Reference,0,True,40
+"FrontOf ( b , d ) & FrontOf ( b , e ) & Larger ( d , b ) & Larger ( e , b )",d and e are both in back of b and larger than it,Reference,0,True,48
+"@ x / y ( ( Dodec ( x ) & LeftOf ( e , x ) ) $ ~ Dodec ( y ) )","for all x , there is an element y such that if x is a dodecahedron and e is to the left of x , then y is not a dodecahedron",Ranta,0,True,123
+/ y ( Dodec ( y ) & ~ Large ( y ) & Dodec ( y ) & ~ Small ( y ) ),some dodecahedron is neither large nor small,Reference,3,False,44
+( Large ( a ) & Small ( d ) ) | ( ~ Large ( a ) & ~ Small ( d ) ),at least one of these holds : \item a is large and d is small \item a is not large and d is not small,Ranta,1,True,101
+"@ z ( / x ( Cube ( x ) & Larger ( a , x ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"~ / u ( Cube ( u ) & RightOf ( u , b ) )","for all cubes u , u is not to the right of b",LoLa,2,False,44
+"( Dodec ( b ) & ~ FrontOf ( b , d ) ) $ ( Dodec ( b ) & ~ BackOf ( b , d ) )","if b is a dodecahedron and it is not the case that b is in front of d , then b is a dodecahedron and it is not the case that b is in back of d",Baseline,1,False,142
+"( RightOf ( c , a ) & Small ( c ) ) | ( ~ RightOf ( c , a ) $ ~ Small ( c ) )","c is to the right of a and c is small or if it is not the case that c is to the right of a , then it is not the case that c is small",Baseline,1,False,132
+( ~ Cube ( b ) $ Tet ( c ) ) | ( ~ Tet ( c ) $ Cube ( b ) ),b is a cube unless c is a tetrahedron,Reference,0,True,37
+"Larger ( d , b ) & Larger ( e , b ) & FrontOf ( b , e ) & FrontOf ( b , d )",d is larger than b and e is larger than b and b is in front of e and b is in front of d,Baseline,2,True,87
+~ Cube ( e ) $ ( Large ( b ) | Large ( b ) | Large ( d ) ),"if it is not the case that e is a cube , then b is large or b is large or d is large",Baseline,1,False,84
+"@ y ( / x ( Cube ( x ) & Smaller ( x , a ) & Tet ( y ) ) $ Smaller ( a , y ) )","for all y , if there is an element x such that x is a cube and x is smaller than a and y is a tetrahedron , then a is smaller than y",Baseline,2,True,132
+"@ x / y / z ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ ( Dodec ( x ) & RightOf ( x , z ) ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"@ w ( ( Dodec ( w ) & ~ / y RightOf ( y , w ) ) $ / x LeftOf ( x , w ) )","for all w , if w is a dodecahedron and it is not the case that there is an element y such that y is to the right of w , then there is an element x such that x is to the left of w",Baseline,3,True,178
+~ / u ( Dodec ( u ) & Large ( u ) ),it is not the case that there is an element u such that u is a dodecahedron and u is large,Baseline,3,True,90
+@ y ( Even ( y ) $ ~ Prime ( y ) ),"for all primes y , y is not even",LoLa,2,False,32
+"Larger ( a , c ) & ~ Large ( a ) & ~ Large ( e ) & Larger ( e , c )",a is larger than c and it is not the case that a is large and it is not the case that e is large and e is larger than c,Baseline,1,False,119
+"/ z @ y ( ( BackOf ( y , z ) $ Larger ( y , z ) ) & @ x ( BackOf ( x , y ) $ Larger ( x , y ) ) )","there is an element z such that for all y , if y is in back of z , then y is larger than z and for all y , for all x , if x is in back of y , then x is larger than y",LoLa,2,False,165
+~ ~ Small ( a ) | ( Small ( d ) & Dodec ( d ) ),"if a is not small , then d is small and d is a dodecahedron",LoLa,0,True,59
+"@ w @ y ( ( Cube ( w ) & Dodec ( y ) & BackOf ( w , y ) ) $ Smaller ( w , y ) )",every cube in back of a dodecahedron is also smaller than it,Reference,3,False,60
+"~ ( LeftOf ( a , b ) & RightOf ( a , c ) ) & ~ ( LeftOf ( e , b ) & RightOf ( e , c ) )",neither e nor a is to the right of c and to the left of b,Reference,3,False,57
+"@ x / y ( Cube ( x ) $ ( / y BackOf ( y , x ) $ Small ( x ) ) )",every cube with something in back of it is small,Reference,3,False,48
+"@ x ( / x ( Larger ( a , x ) & Cube ( x ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) ) )","for all x , if there is an element x such that a is larger than x and x is a cube , then for all y , if y is a tetrahedron , then a is smaller than y",Baseline,2,True,149
+@ x ( Cube ( x ) $ ~ Medium ( x ) ),"for all cubes x , x is not medium",Ranta,2,False,33
+/ x ( Large ( x ) & Cube ( x ) & Cube ( x ) ),some cube is large,LoLa,3,True,18
+"@ x ( Tet ( x ) $ @ y ( ~ SameSize ( x , y ) | ~ Cube ( y ) ) )","for all x , if x is a tetrahedron , then for all y , it is not the case that x is of the same size as y or it is not the case that y is a cube",Baseline,1,False,142
+"~ / z ( ~ Large ( z ) & ~ / w FrontOf ( w , z ) )",it is not the case that there is an element z such that z is not large and it is not the case that there is an element w such that w is in front of z,Ranta,2,False,149
+"~ ( Tet ( a ) & ~ FrontOf ( a , b ) )",it is not the case that a is a tetrahedron and it is not the case that a is in front of b,Baseline,1,False,89
+"@ x / y ( ~ BackOf ( y , x ) $ Cube ( x ) )",anything with nothing in back of it is a cube,Reference,0,True,45
+"@ x ( Dodec ( x ) $ @ y ( ( Cube ( y ) & LeftOf ( x , y ) ) $ Large ( x ) ) )","for all dodecahedrons x , if x is to the left of some cube , then x is large",LoLa,2,False,76
+"@ x / y ( Cube ( x ) $ ( Tet ( y ) & SameSize ( x , y ) & LeftOf ( x , y ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetrahedron and x is of the same size as y and x is to the left of y",Baseline,0,True,141
+"/ x / y ( ( Tet ( x ) & Cube ( y ) & Small ( y ) ) $ ( BackOf ( x , y ) | ~ BackOf ( x , y ) ) )",either there is a small tetrahedron behind a small cube or there isn't,Reference,0,True,70
+"@ x / z ( @ y ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ LeftOf ( z , x ) )","for all x , if for all y , x is a dodecahedron and y is not to the right of x , then something is to the left of x",LoLa,2,False,114
+"~ Large ( e ) | ( BackOf ( e , a ) & ~ ( ~ Large ( e ) & BackOf ( e , a ) ) )",either e is not large or it is in back of a,Reference,0,True,43
+"@ x ( Dodec ( x ) $ @ y ( Cube ( y ) $ ( BackOf ( y , x ) $ Smaller ( y , x ) ) ) )","for all x , if x is a dodecahedron , then for all y , if y is a cube , then if y is in back of x , then y is smaller than x",Baseline,2,True,123
+/ w ~ ( Dodec ( w ) $ ( Large ( w ) | Small ( w ) ) ),"there is an element w such that it is not the case that if w is a dodecahedron , then w is large or small",Ranta,0,True,105
+"~ / u ( Cube ( u ) & / v RightOf ( u , v ) )",it is not the case that there is a cube u such that there is an element v such that u is to the right of v,Ranta,0,True,106
+~ Pet ( max ) & Student ( max ),max is not a pet and max is a student,Ranta,0,True,37
+@ u ( Large ( u ) $ ~ Cube ( u ) ),"for all cubes u , u is not large",LoLa,2,False,32
+"@ x ( Cube ( x ) $ / y ( SameSize ( x , y ) & Tet ( y ) & RightOf ( y , x ) ) )","for all x , if x is a cube , then there is an element y such that x is of the same size as y and y is a tetrahedron and y is to the right of x",Baseline,0,True,142
+"@ x / y ( ~ Large ( x ) $ FrontOf ( y , x ) )","for all x , there is an element y such that if x is not large , then y is in front of x",Ranta,2,False,87
+"@ y ( ( Tet ( y ) $ Smaller ( a , y ) ) | ~ / x ( Cube ( x ) & Larger ( a , x ) ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+~ / w ( Large ( w ) & Dodec ( w ) ),it's not the case that something is a large dodecahedron,Reference,0,True,56
+"@ x ( / y ( Cube ( y ) & Larger ( a , y ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) ) )","for all x , if a is larger than some cube , then a is smaller than every tetrahedron",Ranta,3,True,84
+"/ x ( LeftOf ( x , b ) & Cube ( x ) & BackOf ( x , c ) & Large ( x ) )",a large cube to the left of b is in back of c,Reference,0,True,45
+"@ x ( Cube ( x ) $ ( LeftOf ( x , b ) & RightOf ( x , a ) ) )","for all x , if x is a cube , then x is to the left of b and x is to the right of a",Baseline,0,True,82
+"@ x @ y @ z ( ( BackOf ( y , x ) $ Larger ( y , x ) ) & ( BackOf ( z , y ) $ Larger ( z , y ) ) )","for all x , for all y , for all z , if y is in back of x , then y is larger than x and if z is in back of y , then z is larger than y",Baseline,1,False,133
+"@ x ( Dodec ( x ) $ ( / y ( Cube ( y ) & LeftOf ( x , y ) ) $ Large ( x ) ) )","for all dodecahedrons x , if x is to the left of some cube , then x is large",Ranta,2,False,76
+"@ u ( ~ / x FrontOf ( x , u ) $ Tet ( u ) )",all objects with nothing in front of them are tetrahedra,Reference,3,False,56
+( ~ Large ( a ) | Cube ( a ) ) & ( Large ( a ) | ~ Cube ( a ) ),it is not the case that a is large or a is a cube and a is large or it is not the case that a is a cube,Baseline,1,False,103
+Cube ( d ) & Cube ( c ) & ~ Small ( d ) & ~ Small ( c ),d is a cube and c is a cube and it is not the case that d is small and it is not the case that c is small,Baseline,1,False,105
+"@ x ( ( Dodec ( x ) & ~ / y LeftOf ( y , x ) ) $ / z RightOf ( z , x ) )","for all dodecahedrons x , something is to the left of x or something is to the right of x",LoLa,2,False,89
+"~ ~ FrontOf ( c , f ) & Smaller ( c , f )",c is in front of f and smaller than f,LoLa,2,False,37
+"@ y / x ( ( Dodec ( y ) & ~ RightOf ( x , y ) ) $ Small ( y ) )","for all y , there is an element x such that if y is a dodecahedron and it is not the case that x is to the right of y , then y is small",Baseline,1,False,135
+"@ u ( ( Dodec ( u ) & ~ / y RightOf ( y , u ) ) $ / w LeftOf ( w , u ) )","for all dodecahedrons u , something is to the right of u or something is to the left of u",LoLa,2,False,89
+"@ x @ y ( ( Dodec ( x ) & Cube ( y ) ) $ ( SameSize ( x , y ) | Larger ( x , y ) ) )","for all x , for all cubes y , x is not a dodecahedron , x is of the same size as y or x is larger than y",LoLa,2,False,104
+"@ x ( / u ( Dodec ( x ) & Cube ( u ) & LeftOf ( x , u ) ) $ Large ( x ) )","for all x , if there is an element u such that x is a dodecahedron and u is a cube and x is to the left of u , then x is large",Baseline,1,False,126
+"@ x / y ( Cube ( x ) $ ( Tet ( y ) & LeftOf ( x , y ) & ~ BackOf ( x , y ) & ~ BackOf ( y , x ) ) )","for all cubes x , there is a tetrahedron y such that x is to the left of y , x is not in back of y and y is not in back of x",LoLa,2,False,124
+"@ x @ y @ z ( ( BackOf ( y , x ) & BackOf ( z , y ) ) $ ( Larger ( z , y ) & Larger ( y , x ) ) )","for all x , for all y , for all z , if y is in back of x and z is in back of y , then z is larger than y and y is larger than x",Baseline,2,True,127
+"@ u @ y ( ( Cube ( u ) & Tet ( y ) ) $ LeftOf ( u , y ) )",every cube is to the left of every tetrahedron,Reference,3,False,46
+Small ( a ) | ( Small ( d ) & Dodec ( d ) ),d is a small dodecahedron unless a is small,Reference,0,True,43
+"~ / x ( ~ Dodec ( x ) & @ y ( ~ Dodec ( y ) $ Larger ( x , y ) ) )",only dodecahedra are larger than everything else,Reference,3,False,48
+~ / x ( Dodec ( x ) & ~ ( Small ( x ) | Medium ( x ) | Large ( x ) ) ),"every dodecahedron is small , medium or large",LoLa,3,True,45
+"~ / y / x ( Dodec ( y ) & BackOf ( x , y ) )",nothing is in back of some dodecahedron,LoLa,0,True,39
+"( Tet ( e ) & Large ( e ) ) | ( ~ ( Tet ( e ) & Large ( e ) ) & FrontOf ( e , d ) )","e is in front of d unless it (i.e., e) is a large tetrahedron",Reference,2,True,61
+@ u ~ ( Medium ( u ) & Cube ( u ) ),"for all u , it is not the case that u is medium and u is a cube",Baseline,1,False,63
+"~ / v / w ( Tet ( v ) & Cube ( w ) & SameSize ( v , w ) )","for all v , for all w , v is not a tetrahedron , w is not a cube or v is not of the same size as w",LoLa,0,True,98
+"@ x ( Dodec ( x ) $ @ y ~ FrontOf ( x , y ) )",every dodecahedron is in front of nothing,LoLa,3,True,41
+"@ z ( Cube ( z ) $ / y ( Tet ( y ) & RightOf ( y , z ) & SameSize ( z , y ) ) )",every cube has a tetrahedron of the same size to its right,Reference,3,False,58
+~ / z ( Cube ( z ) & Large ( z ) ),"for all cubes z , z is not large",LoLa,2,False,32
+"@ x ( LeftOf ( x , b ) $ ~ / y ( LeftOf ( y , a ) & Smaller ( y , x ) ) )",nothing to the left of a is smaller than anything to the left of b,Reference,0,True,66
+"@ x ( ~ Cube ( x ) | FrontOf ( x , e ) | BackOf ( x , e ) )",every cube is in front of e or in back of e,LoLa,3,True,43
+"~ / x ~ ( Cube ( x ) $ ~ RightOf ( a , x ) )","for all cubes x , a is not to the right of x",LoLa,2,False,44
+"~ ( RightOf ( b , d ) | LeftOf ( b , d ) ) $ ( Tet ( d ) | Tet ( b ) )","if b is neither to the right nor left of d, then one of them is a tetrahedron",Reference,0,True,77
+"@ x / y ( ( Cube ( x ) & Small ( x ) ) $ ( Cube ( y ) & BackOf ( x , y ) & Large ( y ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+( Tet ( a ) & Tet ( c ) & ( Large ( a ) | Large ( c ) ) ) | ~ Tet ( a ) | ~ Tet ( c ),"if a is a tetrahedron and c is a tetrahedron , then a is a tetrahedron , c is a tetrahedron and a or c is large",LoLa,1,True,111
+"@ x @ y ( Cube ( x ) $ ~ ( RightOf ( x , y ) & Cube ( y ) ) )","for all cubes x , for all cubes y , x is not to the right of y",LoLa,2,False,62
+"@ u @ y ( ( Cube ( u ) & Tet ( y ) ) $ LeftOf ( u , y ) )","for all u , for all y , if u is a cube and y is a tetrahedron , then u is to the left of y",Baseline,1,False,90
+"@ x ( ( Cube ( x ) & Small ( x ) ) $ / y ( Cube ( y ) & Large ( y ) & FrontOf ( y , x ) ) )","for all x , if x is a cube and x is small , then there is an element y such that y is a cube and y is large and y is in front of x",Baseline,1,False,130
+"@ x ( / y ( Cube ( x ) & BackOf ( y , x ) ) $ Small ( x ) )","for all x , if there is an element y such that x is a cube and y is in back of x , then x is small",Baseline,0,True,98
+"~ / x ( Dodec ( x ) & ~ / y ( Cube ( y ) & SameSize ( x , y ) ) )",every dodecahedron is the same size as some cube,Reference,3,False,48
+"@ y / x ( ( Dodec ( y ) & LeftOf ( x , y ) ) $ ~ Dodec ( x ) )","for all dodecahedrons y , there is an element x such that x is not to the left of y or x is not a dodecahedron",LoLa,2,False,110
+"@ x ( @ y ( ~ SameShape ( x , y ) $ Larger ( x , y ) ) $ Dodec ( x ) )",only dodecahedra are larger than everything else,Reference,3,False,48
+"BackOf ( d , b ) & Larger ( e , b ) & Larger ( d , b ) & BackOf ( e , b )",d and e are both in back of b and larger than it,Reference,0,True,48
+"/ x @ y ( Cube ( x ) & Cube ( x ) & ( Tet ( y ) $ FrontOf ( x , y ) ) )",some cube is in front of every tetrahedron,Reference,3,False,42
+"@ x ( / y ( LeftOf ( x , y ) & Cube ( y ) & Dodec ( x ) ) $ Large ( x ) )","for all x , if there is an element y such that x is to the left of y and y is a cube and x is a dodecahedron , then x is large",Baseline,1,False,126
+"@ y ( / x ( Dodec ( y ) & Cube ( x ) & LeftOf ( y , x ) ) $ Large ( y ) )","for all y , if there is an element x such that y is a dodecahedron and x is a cube and y is to the left of x , then y is large",Baseline,1,False,126
+"~ Large ( e ) | BackOf ( e , a ) | ( ~ Large ( e ) & BackOf ( e , a ) )","at least one of these holds : \item e is not large , e is in back of a \item e is not large and e is in back of a",Ranta,0,True,113
+"~ SameCol ( e , c ) & ~ SameCol ( d , e )",it is not the case that e is in the same column as c and it is not the case that d is in the same column as e,Baseline,1,False,109
+"@ x ( ( Dodec ( x ) & @ y ~ RightOf ( y , x ) ) $ / z LeftOf ( z , x ) )","for all x , if x is a dodecahedron and for all y , y is not to the right of x , then there is an element z such that z is to the left of x",Ranta,0,True,138
+"/ x ( Larger ( a , x ) & Cube ( x ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) )","if there is an element x such that a is larger than x and x is a cube , then for all y , if y is a tetrahedron , then a is smaller than y",Baseline,2,True,137
+"~ Cube ( a ) $ ~ ( RightOf ( a , d ) | LeftOf ( a , d ) )","if a is not a cube , then it is not the case that a is to the right of d or to the left of d",Ranta,1,True,92
+"@ z ( Dodec ( z ) $ / u ( Cube ( u ) & SameSize ( z , u ) ) )",every dodecahedron is the same size as some cube,Reference,3,False,48
+"/ u ( ( Cube ( u ) & Larger ( a , u ) ) $ @ y ( Tet ( y ) $ Smaller ( u , y ) ) )",if a is larger than some cube then it is smaller than every tetrahedron,Reference,3,False,71
+"@ x ~ ( Adjoins ( a , x ) | Adjoins ( x , a ) )",a is adjacent to nothing and nothing is adjacent to a,LoLa,0,True,53
+"@ x ( ( Dodec ( x ) & ~ / z RightOf ( z , x ) ) $ / z LeftOf ( z , x ) )","for all dodecahedrons x , something is to the right of x or something is to the left of x",LoLa,2,False,89
+@ x / x ( Dodec ( x ) & ~ Small ( x ) ),"for all x , there is a dodecahedron x such that x is not small",Ranta,2,False,62
+"~ ( ~ Larger ( e , c ) $ Larger ( d , c ) )",neither e nor d is larger than c,Reference,2,True,32
+"~ / x / y ( Larger ( y , x ) & FrontOf ( y , x ) )",it is not the case that there is an element x such that there is an element y such that y is larger than x and in front of x,Ranta,2,False,124
+"/ x @ y ( ( Cube ( x ) & Larger ( a , x ) & Tet ( y ) ) $ Smaller ( x , y ) )","there is an element x such that for all y , if x is a cube , a is larger than x and y is a tetrahedron , then x is smaller than y",Ranta,2,False,129
+"@ x ( ~ LeftOf ( x , a ) | / y ( LeftOf ( y , b ) & ~ Larger ( x , y ) ) )","for all x , it is not the case that x is to the left of a or there is an element y such that y is to the left of b and it is not the case that x is larger than y",Baseline,1,False,161
+"~ @ x ~ ( LeftOf ( x , b ) & BackOf ( x , c ) & Large ( x ) & Cube ( x ) )","it is not the case that for all x , it is not the case that x is to the left of b and x is in back of c and x is large and x is a cube",Baseline,1,False,134
+"@ w ( ( Cube ( w ) & / y BackOf ( y , w ) ) $ Small ( w ) )","for all cubes w , nothing is in back of w or w is small",LoLa,2,False,55
+"( ~ RightOf ( b , d ) & ~ LeftOf ( b , d ) ) $ ( Tet ( d ) | Tet ( b ) )","if it is not the case that b is to the right of d and it is not the case that b is to the left of d , then d is a tetrahedron or b is a tetrahedron",Baseline,1,False,147
+Small ( c ) $ ( Dodec ( d ) $ ( ~ Large ( d ) & ~ Small ( d ) ) ),"if c is small and d is a dodecahedron, then d is neither large nor small",Reference,0,True,72
+"@ x ( / y ( Cube ( y ) & LeftOf ( x , y ) & Dodec ( x ) ) $ Large ( x ) )","for all x , if there is an element y such that y is a cube and x is to the left of y and x is a dodecahedron , then x is large",Baseline,0,True,126
+"@ x ( @ y ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ / y LeftOf ( y , x ) )","for all x , if for all y , x is a dodecahedron and y is not to the right of x , then there is an element y such that y is to the left of x",Ranta,0,True,138
+"@ x / y / z ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ ( Dodec ( x ) & RightOf ( x , z ) ) )","for all x , there is an element z such that if for all y , y is not to the right of x and x is a dodecahedron , then x is to the right of z and x is a dodecahedron",LoLa,0,True,163
+"~ / x / y ( Tet ( x ) & Cube ( y ) & SameSize ( x , y ) )","it is not the case that there is an element x such that there is an element y such that x is a tetrahedron , y is a cube and x is of the same size as y",Ranta,3,True,151
+"@ y / x ( ( BackOf ( y , x ) $ Larger ( y , x ) ) & @ z ( BackOf ( z , y ) $ Larger ( z , y ) ) )","the further back something is, the larger it is",Reference,0,True,47
+"@ y ( ( Tet ( y ) $ Smaller ( a , y ) ) | ~ / x ( Cube ( x ) & Larger ( a , x ) ) )","if a is larger than some cube , then a is smaller than every tetrahedron",LoLa,3,True,72
+"~ ( FrontOf ( d , c ) | FrontOf ( d , b ) ) & ~ ( FrontOf ( c , c ) | FrontOf ( c , b ) )",it is not the case that d is in front of c or d is in front of b and it is not the case that c is in front of c or c is in front of b,Baseline,1,False,133
+"/ y ( LeftOf ( y , b ) & BackOf ( y , c ) )",something to the left of b is in back of c,Reference,0,True,42
+"@ x / y ( ( Dodec ( x ) & ~ RightOf ( y , x ) ) $ / z RightOf ( x , z ) )","for all x , if for all y , x is a dodecahedron and y is not to the right of x , then x is to the right of something",LoLa,2,False,115
+"@ x ( Dodec ( x ) $ ( ~ / y RightOf ( y , x ) $ / y LeftOf ( y , x ) ) )","for all dodecahedrons x , if it is not the case that there is an element y such that y is to the right of x , then there is an element y such that y is to the left of x",Ranta,2,False,168
+"~ / x / y ( BackOf ( x , y ) & ~ Larger ( x , y ) )",it is not the case that there is an element x such that there is an element y such that x is in back of y and x is not larger than y,Ranta,2,False,132
+@ x ( Tet ( c ) $ ~ Tet ( a ) ),"if c is a tetrahedron, then a is not a tetrahedron",Reference,0,True,50
+"~ / x / y ( BackOf ( x , y ) & Dodec ( y ) )",it is not the case that there is an element x such that there is an element y such that x is in back of y and y is a dodecahedron,Baseline,3,True,129
+"@ x @ y ( ( Cube ( y ) & FrontOf ( x , y ) ) $ Small ( y ) )","for all x , for all cubes y , x is not in front of y or y is small",LoLa,2,False,66
+~ Tet ( b ) | ~ Tet ( d ),it is not the case that b is a tetrahedron or it is not the case that d is a tetrahedron,Baseline,1,False,88
+"@ x / y ( ( Cube ( x ) & Small ( x ) ) $ ( Large ( y ) & BackOf ( x , y ) & Cube ( y ) ) )",every small cube is in back of a large cube,Reference,3,False,43
+"Larger ( b , e ) & Larger ( b , a )",b is larger than both a and e,Reference,0,True,29
+"/ y ( ( Dodec ( y ) $ LeftOf ( e , y ) ) $ ~ Dodec ( e ) )","there is an element y such that if if y is a dodecahedron , then e is to the left of y , then it is not the case that e is a dodecahedron",Baseline,1,False,137
+"@ x ( / y ( Cube ( x ) & FrontOf ( x , y ) ) $ Small ( x ) )",every cube with something in back of it is small,Reference,3,False,48
+"@ x @ y ( ( Dodec ( x ) & Cube ( y ) ) $ ( Larger ( x , y ) | SameSize ( y , x ) ) )","for all x , for all cubes y , x is not a dodecahedron , x is larger than y or y is of the same size as x",LoLa,2,False,104
+"@ x @ y ( ~ / y FrontOf ( y , x ) $ Tet ( x ) )","for all x , something is in front of x or x is a tetrahedron",LoLa,0,True,60
+~ Cube ( a ) $ ( ~ Cube ( c ) $ Cube ( e ) ),"a is a cube , c is a cube or e is a cube",LoLa,1,True,40
+( Medium ( c ) & ~ ( Cube ( d ) | Cube ( e ) | Cube ( f ) ) ) | ~ Medium ( c ),"if c is not medium , d is a cube , e is a cube or f is a cube , then c is not medium",LoLa,1,True,84
+@ x ( ( Cube ( x ) | Dodec ( x ) | Tet ( x ) ) $ ~ ( Medium ( x ) & Cube ( x ) ) ),"for all x , if x is a cube , x is a dodecahedron or x is a tetrahedron , then x is not medium or x is not a cube",LoLa,1,True,112
+"~ ( ~ Larger ( e , c ) $ Larger ( d , c ) )","it is not the case that if e is not larger than c , then d is larger than c",Ranta,2,False,75
+"@ x ( Dodec ( x ) $ ( ~ / y RightOf ( x , y ) $ / z LeftOf ( x , z ) ) )","for all x , if x is a dodecahedron , then if it is not the case that there is an element y such that x is to the right of y , then there is an element z such that x is to the left of z",Baseline,3,True,184
+"@ x ~ Adjoins ( a , x )",a is adjacent to nothing,LoLa,0,True,24
+"@ y ( ( Dodec ( y ) & / z ( LeftOf ( y , z ) & Cube ( z ) ) ) $ Large ( y ) )","for all y , if y is a dodecahedron and y is to the left of some cube , then y is large",LoLa,2,False,86
+( Cube ( a ) $ Large ( a ) ) & ( ~ Cube ( a ) $ ~ Large ( a ) ),"all these hold : \item if a is a cube , then a is large \item if a is not a cube , then a is not large",Ranta,0,True,102
+"@ x ( Cube ( x ) $ ~ / y ( Dodec ( y ) & Larger ( x , y ) ) )","for all cubes x , it is not the case that x is larger than some dodecahedron",Ranta,1,True,76
+/ u ( Dodec ( u ) & ~ Small ( u ) & ~ Large ( u ) ),"there is an element u such that u is a dodecahedron , u is not small and u is not large",Ranta,0,True,87
+Small ( a ) | ( ~ Small ( a ) & Large ( d ) & Large ( c ) ),"at least one of these holds : \item a is small \item a is not small , d is large and c is large",Ranta,1,True,95
+/ x ( ~ Large ( x ) & Dodec ( x ) ),there is an element x such that it is not the case that x is large and x is a dodecahedron,Baseline,1,False,90
+"@ x ~ / y ( Dodec ( x ) & Cube ( y ) & Larger ( y , x ) )","for all x , it is not the case that there is an element y such that x is a dodecahedron and y is a cube and y is larger than x",Baseline,1,False,126
+"@ x ( @ y @ z ( ~ BackOf ( y , x ) & ~ BackOf ( z , x ) ) $ Cube ( x ) )","for all x , if for all y , for all z , y is not in back of x and z is not in back of x , then x is a cube",Ranta,0,True,105
+"@ x ~ / y ( Cube ( x ) & Cube ( y ) & RightOf ( y , x ) )","for all x , it is not the case that there is an element y such that x is a cube , y is a cube and y is to the right of x",Ranta,3,True,120
+/ x ( Dodec ( x ) & ( Dodec ( x ) $ ( ~ Small ( x ) & ~ Large ( x ) ) ) ),"there is an element x such that x is a dodecahedron and if x is a dodecahedron , then it is not the case that x is small and it is not the case that x is large",Baseline,1,False,159
+"Larger ( e , c ) & Larger ( a , c ) & ~ ( Large ( a ) | Large ( e ) )","e is larger than c , a is larger than c , a is not large and e is not large",LoLa,2,False,75
+"( ~ LeftOf ( b , d ) & ~ LeftOf ( d , b ) ) $ ( Tet ( b ) | Tet ( d ) )","if b is neither to the right nor left of d, then one of them is a tetrahedron",Reference,0,True,77
+~ Cube ( a ) $ ( Cube ( c ) | Cube ( e ) ),"if a is not a cube , then c is a cube or e is a cube",Ranta,1,True,52
+"~ / x ( Dodec ( x ) & ~ LeftOf ( e , x ) ) $ ~ Dodec ( e )","if it is not the case that there is an element x such that x is a dodecahedron and it is not the case that e is to the left of x , then it is not the case that e is a dodecahedron",Baseline,1,False,179
+"~ / y ( Dodec ( y ) & / x FrontOf ( y , x ) )",it is not the case that there is a dodecahedron y such that there is an element x such that y is in front of x,Ranta,2,False,110
+/ x ( ~ Large ( x ) | ~ Dodec ( x ) ),there is an element x such that x is not large or x is not a dodecahedron,Ranta,0,True,73
+"@ x @ y ( ( Cube ( y ) & Cube ( x ) ) $ ~ RightOf ( x , y ) )","for all x , for all y , if y is a cube and x is a cube , then x is not to the right of y",Ranta,1,True,88
+"@ x ( @ y ( Cube ( x ) & @ y ( Tet ( y ) $ FrontOf ( x , y ) ) ) $ Large ( x ) )",every cube in front of every tetrahedron is large,Reference,3,False,49
+"@ w ( Cube ( w ) $ ( ~ SameCol ( w , a ) & ~ SameCol ( w , b ) ) )","for all cubes w , w is not in the same column as a and w is not in the same column as b",Ranta,2,False,87
+"@ x ( / u ( Dodec ( x ) & Cube ( u ) & LeftOf ( x , u ) ) $ Large ( x ) )","for all x , if there is an element u such that x is a dodecahedron , u is a cube and x is to the left of u , then x is large",Ranta,0,True,124
+"BackOf ( f , c ) & Larger ( f , c )","c is in front of f; moreover, it is smaller than f",Reference,2,True,50
+~ Cube ( e ) $ ( Large ( b ) | ( ~ Large ( b ) & Large ( d ) ) ),"at least one of these holds : \item e is a cube , b is not large and d is large \item b is large",LoLa,0,True,96
+"~ / x ( ~ Tet ( x ) & @ y ~ FrontOf ( y , x ) )",all objects with nothing in front of them are tetrahedra,Reference,3,False,56
+"@ x @ y ( Cube ( x ) $ ~ / y RightOf ( x , y ) )","for all x , for all y , if x is a cube , then it is not the case that there is an element y such that x is to the right of y",Baseline,3,True,124
+/ v ( Dodec ( v ) & ~ ( Large ( v ) | Small ( v ) ) ),there is a dodecahedron v such that it is not the case that v is large or small,Ranta,1,True,79
+"@ x ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) & @ y ( ~ LeftOf ( y , a ) $ ~ LeftOf ( y , b ) )","for all x , if x is to the left of a , then x is to the left of b and for all y , if y is not to the left of a , then y is not to the left of b",Ranta,0,True,143
+"~ / x ( Tet ( x ) & Medium ( x ) & ~ FrontOf ( x , b ) )",it is not the case that there is an element x such that x is a tetrahedron and x is medium and it is not the case that x is in front of b,Baseline,1,False,137
+"/ x ( Cube ( x ) & Large ( x ) & RightOf ( b , x ) & FrontOf ( c , x ) )",a large cube to the left of b is in back of c,Reference,0,True,45
+/ x ( ( Dodec ( x ) & Large ( x ) ) $ ~ Large ( x ) ),it is not the case that everything is a dodecahedron and everything is large and large,LoLa,0,True,86
+"@ z @ u ( Dodec ( z ) $ ~ BackOf ( u , z ) )","for all z , for all u , if z is a dodecahedron , then it is not the case that u is in back of z",Baseline,1,False,95
+"@ x ( @ y ( BackOf ( y , x ) $ Larger ( y , x ) ) & @ z ( FrontOf ( z , x ) $ Smaller ( z , x ) ) )","the further back something is, the larger it is",Reference,0,True,47
+"@ z @ x ( ( FrontOf ( z , x ) $ Larger ( x , z ) ) & ( BackOf ( z , x ) $ Smaller ( x , z ) ) )","the further back a thing is, the larger it is",Reference,0,True,45
+/ y / x ( ( Cube ( y ) | Tet ( x ) ) & @ z ~ Dodec ( z ) ),"there is an element y such that there is an element x such that y is a cube or x is a tetrahedron and for all z , it is not the case that z is a dodecahedron",Baseline,1,False,157
+"/ y ( Cube ( y ) & Large ( y ) & @ x ( Small ( x ) $ ( Cube ( x ) $ BackOf ( x , y ) ) ) )","there is an element y such that y is a cube and y is large and for all x , if x is small , then if x is a cube , then x is in back of y",Baseline,0,True,135
+"/ x / y ( Cube ( x ) & Large ( x ) & Cube ( y ) & Small ( y ) & BackOf ( y , x ) )","there is an element y such that there is a cube x such that x is large , y is a cube , y is small and y is in back of x",LoLa,1,True,119
+"~ / x @ z / y ( LeftOf ( x , a ) & Smaller ( x , y ) & LeftOf ( y , b ) )","it is not the case that there is an element x such that for all z , there is an element y such that x is to the left of a , x is smaller than y and y is to the left of b",Ranta,2,False,169
+"~ / z / y ( Tet ( z ) & Cube ( y ) & SameSize ( z , y ) )",no tetrahedron is the same size as any cube,Reference,3,False,43
+"@ x @ y ( Cube ( x ) $ ( Cube ( y ) $ ~ RightOf ( x , y ) ) )","for all cubes x , for all cubes y , x is not to the right of y",LoLa,2,False,62
+"~ / y ( Cube ( y ) & RightOf ( y , b ) )",it is not the case that some cube is to the right of b,Ranta,3,True,54
+"~ FrontOf ( d , b ) & ~ FrontOf ( c , c ) & ~ FrontOf ( d , c ) & ~ FrontOf ( c , b )","d is not in front of b , c is not in front of c , d is not in front of c and c is not in front of b",Ranta,0,True,99
+/ u ( Dodec ( u ) & ~ Large ( u ) & ~ Small ( u ) ),"there is an element u such that u is a dodecahedron , u is not large and u is not small",Ranta,0,True,87
+"@ x @ y ( ( / x FrontOf ( x , y ) & Cube ( y ) ) $ Small ( y ) )","for all x , for all y , if there is an element x such that x is in front of y and y is a cube , then y is small",Baseline,2,True,111
+"@ x @ y ( ( BackOf ( x , y ) $ Larger ( x , y ) ) & ( FrontOf ( x , y ) $ Smaller ( x , y ) ) )","for all x , for all y , if x is in back of y , then x is larger than y and if x is in front of y , then x is smaller than y",Baseline,1,False,123
+"~ @ x Adjoins ( x , a )",a does not adjoin everything,Reference,0,True,28
+"@ x ( ( Cube ( x ) $ ~ SameCol ( a , x ) ) & ( Cube ( x ) $ ~ SameCol ( x , b ) ) )","for all cubes x , a is not in the same column as x and x is not in the same column as b",LoLa,2,False,87
+"@ y @ x ( Tet ( x ) $ ~ ( Cube ( y ) & SameSize ( x , y ) ) )","for all y , for all x , if x is a tetrahedron , then it is not the case that y is a cube and x is of the same size as y",Baseline,1,False,119
+"@ x / z / u ( ( Dodec ( x ) & ~ RightOf ( z , x ) ) $ LeftOf ( u , x ) )",every dodecahedron with nothing to its right has something to its left,Reference,3,False,70
+"/ z ( LeftOf ( z , b ) & BackOf ( z , c ) & Large ( z ) & Cube ( z ) )",some large cube is to the left of b and in back of c,Reference,0,True,52
+~ ( Small ( d ) | Small ( c ) ) & Cube ( c ) & Cube ( d ),"d is not small , c is not small , c is a cube and d is a cube",LoLa,1,True,61
+"~ / u ( Cube ( u ) & RightOf ( u , b ) )",b is not to the left of a cube,Reference,0,True,30
+"@ x @ y ( ( ( Dodec ( x ) & Cube ( y ) ) $ SameSize ( x , y ) ) | Larger ( x , y ) )",every dodecahedron is as large as every cube,Reference,3,False,44
+"@ y LeftOf ( e , y ) $ ~ Dodec ( e )","if for all y , e is to the left of y , then it is not the case that e is a dodecahedron",Baseline,1,False,87
+"@ x @ y ( Cube ( x ) $ ~ LeftOf ( y , x ) )",no cube is to the right of anything,Reference,3,False,35
